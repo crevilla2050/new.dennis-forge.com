@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dennis Forge — Get Started</title>
+
+<meta name="description"
+      content="Start your journey with Dennis Forge. Download the CLI, create an account, self-host, or join the Academic and Founder programs." />
+
+<meta property="og:title"
+      content="Dennis Forge — Get Started" />
+
+<meta property="og:description"
+      content="Choose the path that best fits your needs and start building with Dennis Forge." />
+
+<meta name="twitter:title"
+      content="Dennis Forge — Get Started" />
+
+<meta name="twitter:description"
+      content="Download the CLI, create an account, self-host, or become a Founder." />
+
+<link rel="canonical"
+      href="https://dennis-forge.com/get-started.html" />
+  
+  <link rel="alternate" hreflang="en" href="https://dennis-forge.com/" />
+  <link rel="alternate" hreflang="es" href="https://dennis-forge.com/index-es.html" />
+  <link rel="alternate" hreflang="de" href="https://dennis-forge.com/index-de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://dennis-forge.com/" />
+  <link rel="preload" as="image" href="assets/img/dennis-forge-hero.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260629" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Dennis Forge",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cross-platform",
+      "author": {
+        "@type": "Person",
+        "name": "Carlos Revilla"
+      },
+      "description": "Deterministic transformation engine for Git-native projects.",
+      "url": "https://dennis-forge.com/",
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/crevilla2050/string-audit",
+      "keywords": "codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools"
+    }
+  </script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-bg"></div>
+
+ <div class="header-content">
+  <img src="assets/img/logo.png" class="sidebar-logo" />
+
+<div class="lang-switch">
+  <a href="index.html" class="active">EN</a>
+  <a href="index-es.html">ES</a>
+  <a href="index-de.html">DE</a>
+</div>
+</div>
+</header>
+
+  <!-- ===== CONTENT ===== -->
+  <main id="main-content">
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Get Started with
+                <span>Dennis Forge</span>
+            </h1>
+            <img src="assets/img/logo.png" />
+            <p>
+                Whether you're an individual developer,
+                a team, an educator or an enterprise,
+                there's a place for you in the Forge.
+            </p>
+
+            <div class="cta">
+                <a href="/repo/register" class="btn primary">
+                    Create Account
+                </a>
+
+                <a href="https://github.com/crevilla2050/string-audit"
+                class="btn secondary">
+                    Download CLI
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+            <img src="assets/img/dennis-forge-hero.png">
+        </div>
+
+    </section>
+    <section class="section">
+
+        <div class="container">
+
+            <h2>Choose Your Journey</h2>
+
+            <p class="section-subtitle">
+                Start where you are today and grow with Dennis Forge.
+            </p>
+
+            <div class="cards getting-started-cards">
+
+                <!-- cards go here -->
+
+            </div>
+
+        </div>
+
+    </section>
+  </main>  
+
+<footer>
+  Dennis the Forge © Carlos Revilla 2026 ·
+<a href="faq.html">FAQ</a> ·
+<a href="https://github.com/crevilla2050/string-audit">GitHub</a> ·
+⭐ Star the project if you like deterministic tools
+</footer>
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+});
+
+document
+  .querySelectorAll('.reveal')
+  .forEach(el => observer.observe(el));
+</script>
+
+<script>
+(function(){
+
+  const k = atob("Mzg7Mzg7NDA7NDA7Mzc7Mzk7Mzc7Mzk7NjY7NjU=").split(";").map(Number);
+  let b = [];
+
+  document.addEventListener("keydown", function(e){
+
+    b.push(e.keyCode);
+
+    if(b.length > k.length){
+      b.shift();
+    }
+
+    if(b.join(",") === k.join(",")){
+
+      const f = document.getElementById("forge-fade");
+      f.style.opacity = 1;
+
+      setTimeout(()=>{
+        location.href="assets/default.html";
+      },900);
+
+    }
+
+  });
+
+})();
+</script>
+<div id="forge-fade"></div>
+</body>
+</html>

@@ -87,11 +87,11 @@
 
 
             <div class="cta">
-            <a class="btn primary">
+            <a href="get-started.html" class="btn primary">
                 Get Started
             </a>
 
-            <a class="btn secondary">
+            <a href="#pricing-preview" class="btn secondary">
                 View Pricing
             </a>
             </div>
@@ -460,7 +460,7 @@
             <h3>Free for Students and Educators</h3>
 
             <p>
-                Dennis Forge offers free and discounted licenses for
+                Dennis Forge discounted licenses for
                 universities, teachers and students learning software
                 transformation and reproducible engineering.
             </p>
@@ -484,7 +484,7 @@
             <h2>Become a Forge Founder</h2>
 
             <p class="section-subtitle">
-                Join the first believers who helped forge Dennis into reality.
+                Join the first 161 believers who helped forge Dennis into reality.
                 Founder memberships are limited and will never be offered again.
             </p>
 
@@ -510,7 +510,7 @@
                 </div>
 
                 <div class="price founder-price">
-                    $149
+                    $161
                     <span>one time</span>
                 </div>
 
@@ -660,6 +660,19 @@
 <a href="https://github.com/crevilla2050/string-audit">GitHub</a> ·
 ⭐ Star the project if you like deterministic tools
 </footer>
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+});
+
+document
+  .querySelectorAll('.reveal')
+  .forEach(el => observer.observe(el));
+</script>
 
 <script>
 (function(){
