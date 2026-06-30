@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dennis Forge — Frequently Asked Questions</title>
+
+    <meta name="description"
+    content="Start your journey with Dennis Forge. Download the CLI, create an account, self-host, or join the Academic and Founder programs." />
+
+    <meta name="description"
+    content="Most Frequented Asked Questions, with all you need to know before commiting" />
+
+    <meta property="og:description"
+    content="Learn about the Dennis Forge,The Founder Program, its perks, and common questions for new or regular users." />
+
+    <meta name="twitter:title"
+    content="Dennis Forge — FAQs" />
+
+    <meta name="twitter:description"
+    content="Dennis the Forge Frequently Asked Questions." />
+
+    <link rel="canonical"
+    href="https://dennis-forge.com/faq.html" />
+
+    <link rel="alternate" hreflang="en" href="https://dennis-forge.com/" />
+    <link rel="alternate" hreflang="es" href="https://dennis-forge.com/index-es.html" />
+    <link rel="alternate" hreflang="de" href="https://dennis-forge.com/index-de.html" />
+    <link rel="alternate" hreflang="x-default" href="https://dennis-forge.com/" />
+    <link rel="preload" as="image" href="assets/img/dennis-forge-hero.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260629" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dennis Forge",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform",
+        "author": {
+        "@type": "Person",
+        "name": "Carlos Revilla"
+        },
+        "description": "Deterministic transformation engine for Git-native projects.",
+        "url": "https://dennis-forge.com/",
+        "license": "https://opensource.org/licenses/MIT",
+        "codeRepository": "https://github.com/crevilla2050/string-audit",
+        "keywords": "codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools"
+    }
+    </script>
+    <script src="assets/js/forge.js"></script>
+    <script src="assets/js/components/header.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<dennis-header></dennis-header>
+
+  <!-- ===== CONTENT ===== -->
+  <main id="main-content">
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Frequently Asked Questions</h1>
+
+            <p>
+            Dennis Forge introduces a different way of thinking about software
+            transformations. Instead of executing changes immediately, Dennis
+            generates deterministic plans that can be inspected, exported,
+            signed, verified, and applied safely.
+            </p>
+
+            <p>
+            The guiding principle is simple:
+            <strong>plans first — changes later.</strong>
+            </p>
+        </div>
+
+        <div class="hero-visual">
+            <img src="assets/img/dennis-forge-hero.png" alt="Hero visual">
+        </div>
+
+    </section>
+
+<div class="faq-nav">
+<a href="#" onclick="loadPage('index.html')">← Back to Home</a>
+</div>
+
+<section class="section">
+<h2>General</h2>
+
+<h3>Is Dennis free?</h3>
+
+<p>
+Yes.
+</p>
+
+<p>
+The Dennis CLI and deterministic core are open source and released
+under the MIT license. They will remain free to use.
+</p>
+
+<p>
+Dennis The Forge is an optional hosted platform for collaboration,
+artifact sharing, and team features.
+</p>
+
+<h3>Why should I trust DEX artifacts?</h3>
+
+<p>
+DEX artifacts are deterministic, inspectable, and optionally signed.
+Their contents can be reviewed manually and their integrity verified
+independently.
+</p>
+
+<p>
+Nothing is hidden and no central service is required to validate them.
+</p>
+
+<p>
+A DEX artifact can be inspected years later and still produce the same
+verifiable information, making it suitable for environments where
+reproducibility and accountability matter.
+</p>
+
+
+<h3>What problem does Dennis solve?</h3>
+
+<p>
+Large code transformations are inherently risky. Traditional scripts,
+codemods, or migration tools often modify files immediately, making
+it difficult to understand what will actually change before execution.
+</p>
+
+<p>
+Dennis separates planning from execution. It generates a deterministic
+transformation plan that can be reviewed and verified before any change
+is applied.
+</p>
+
+<p>
+The plan becomes the source of truth.
+</p>
+
+<h3>Can non-technical users use Dennis?</h3>
+
+<p>
+Yes.
+</p>
+
+<p>
+While Dennis is designed as a developer tool, its core workflow is simple:
+generate a plan, review it, and apply it.
+</p>
+
+<p>
+This makes it suitable for environments such as compliance audits,
+legal workflows, or any situation where changes must be reviewed
+before execution.
+</p>
+
+<p>
+The technical details are optional. The plan itself is human-readable.
+</p>
+
+<h3>Is Dennis a refactoring tool?</h3>
+
+<p>
+Not exactly. Dennis is better described as a
+<strong>deterministic transformation engine</strong>.
+</p>
+
+<p>
+It allows teams to define, inspect, share, and safely apply structured
+changes across codebases.
+</p>
+
+
+<h3>What does “deterministic” mean?</h3>
+
+<p>
+Deterministic means the same input produces the same output.
+Given the same project and dictionary, Dennis will generate the exact
+same transformation plan.
+</p>
+
+<p>
+This guarantees reproducibility and allows plans to be reviewed,
+stored, and verified safely.
+</p>
+
+<h3>What is the decision layer?</h3>
+
+<p>
+Before generating a transformation plan, Dennis evaluates whether
+extracted content is meaningful. This decision layer filters out noise
+such as SQL fragments, CSS classes, identifiers, and code artifacts.
+</p>
+
+<p>
+This ensures that DEX artifacts represent meaningful transformations,
+not raw extraction.
+</p>
+
+<h3>What is lineage?</h3>
+
+<p>
+Lineage is the chain of transformations recorded across artifacts.
+Each step includes hashes and metadata linking it to the previous state.
+</p>
+
+<p>
+This creates a verifiable history where transformations can be traced,
+audited, and validated over time.
+</p>
+
+<h3>Why the name “Dennis the Forge”?</h3>
+
+<p>
+A forge is a place where things are crafted deliberately.
+Nothing happens accidentally. Every step is visible. And the final product is immutable and verifiable.
+</p>
+
+<p>
+Dennis follows the same philosophy: transformations are planned,
+reviewed, and executed intentionally.
+</p>
+
+<p>
+The name also honors <strong>Dennis Ritchie</strong>, co-creator of the
+C programming language and one of the architects of modern computing.
+</p>
+
+<h3>Can Dennis be used in CI/CD pipelines?</h3>
+
+<p>
+Yes.
+</p>
+
+<p>
+Because plans and artifacts are deterministic,
+they can be generated, verified, and applied in automated environments.
+</p>
+
+<p>
+This enables workflows where transformations are validated
+before being applied in production systems.
+</p>
+
+<h3>How does Dennis verify changes after applying them?</h3>
+
+<p>
+Dennis includes a deterministic diff system that compares the original
+state of a project with the result after applying a transformation.
+</p>
+
+<p>
+When used in Git repositories, Dennis focuses on tracked files and
+filters out irrelevant noise such as internal metadata or binary files.
+</p>
+
+<p>
+The result is a clean, structured diff that reflects only meaningful changes.
+Because the diff is deterministic, it can be reproduced and verified reliably.
+</p>
+
+</section>
+
+
+
+<section class="section">
+<h2>DEX Artifacts</h2>
+
+<h3>What is a DEX artifact?</h3>
+
+<p>
+DEX stands for <strong>Deterministic EXchange artifact</strong>.
+</p>
+
+<p>
+A DEX artifact is a portable container that describes a transformation.
+It includes the plan, metadata, and optional cryptographic signatures.
+</p>
+
+<p>
+DEX artifacts allow transformations to be shared, verified,
+and executed safely across machines and teams.
+</p>
+
+
+<h3>What is inside a DEX file?</h3>
+
+<p>
+Internally a DEX file is a deterministic <code>tar.gz</code> archive
+containing:
+</p>
+
+<ul>
+<li><strong>manifest.json</strong> — metadata</li>
+<li><strong>payload/plan.json</strong> — transformation plan</li>
+<li><strong>signatures/</strong> — optional signatures</li>
+</ul>
+
+
+<h3>Can I inspect a DEX artifact manually?</h3>
+
+<p>
+Yes. DEX artifacts are intentionally transparent.
+They can be inspected using standard tools.
+</p>
+
+<pre>
+tar -tzf artifact.dex
+</pre>
+<h3>What is XDEX?</h3>
+
+<p>
+XDEX is an extension of the DEX format designed for situations
+where the transformation payload must remain confidential.
+</p>
+
+<p>
+In an XDEX artifact, the transformation plan is encrypted while
+the manifest and metadata remain visible. This allows the artifact
+to preserve verifiability, signatures, and provenance while
+protecting sensitive transformation details.
+</p>
+
+<p>
+This makes XDEX suitable for environments where transparency of
+the artifact is required but the transformation logic itself must
+remain private.
+</p>
+
+
+<h3>How is Dennis different from codemods or AST-based tools?</h3>
+
+<p>
+Traditional codemods focus on changing code.
+Dennis focuses on managing transformations.
+</p>
+
+<p>
+It introduces a separation between planning and execution by generating
+a deterministic plan that can be reviewed, verified, shared, and
+reproduced before any change is applied.
+</p>
+
+<p>
+The focus is not only on how to transform code, but on making
+transformations inspectable, portable, and trustworthy.
+</p>
+
+<h3>Where are DEX artifacts stored?</h3>
+
+<p>
+DEX artifacts are portable files.
+</p>
+
+<p>
+They can be stored in Git repositories, artifact registries,
+local storage, or shared directly between teams.
+</p>
+
+<p>
+Dennis does not require a central service to function.
+</p>
+
+<p>
+The Forge stores DEX artifacts and indexes metadata to enable
+search and discovery.
+</p>
+
+<p>
+Artifacts are treated as immutable units. The system does not
+modify their contents.
+</p>
+
+<h3>Does the hosted service replace the CLI?</h3>
+
+<p>
+No.
+</p>
+
+<p>
+The CLI remains the primary and fully capable interface.
+The hosted service, https://repo.dennis-forge.com is an additional layer for collaboration,
+inspection, and artifact sharing.
+</p>
+
+<p>
+All core functionality remains available locally.
+</p>
+
+</section>
+
+
+
+<section class="section">
+<h2>Security, Trust & Chain of Custody</h2>
+
+<h3>Why does Dennis support signatures?</h3>
+
+<p>
+Signatures allow teams to verify that a transformation plan has not
+been altered and that it originates from a trusted source.
+</p>
+
+
+<h3>Are signatures replaceable?</h3>
+
+<p>
+No. Signatures are <strong>append-only</strong>.
+</p>
+
+<p>
+Each new signature is added to the artifact without removing the
+previous ones. This preserves a full historical record of approvals.
+</p>
+
+
+<h3>What does this enable?</h3>
+
+<p>
+This design creates a verifiable
+<strong>chain of custody</strong> for transformations.
+</p>
+
+<p>
+Artifacts can accumulate signatures over time — for example from
+developers, teams, auditors, or organizations — without losing
+the previous record.
+</p>
+
+
+<h3>Can Dennis prove where a transformation came from?</h3>
+
+<p>
+DEX artifacts contain metadata, hashes, and signatures that allow
+the origin and integrity of a transformation to be verified.
+</p>
+
+<p>
+This makes Dennis suitable for environments where traceability
+and accountability are important.
+</p>
+
+
+<h3>Can DEX artifacts be published independently?</h3>
+
+<p>
+Yes.
+</p>
+
+<p>
+DEX artifacts are portable files and do not depend on a specific
+service or platform. They can be distributed independently,
+stored in Git, shared between teams, or published through
+registries.
+</p>
+
+<p>
+This also allows independent researchers or auditors to publish
+verifiable artifacts describing transformations or evidence
+without relying on centralized infrastructure.
+</p>
+
+<h3>What are the current limitations?</h3>
+
+<p>
+Dennis focuses on deterministic transformations.
+It does not attempt to interpret runtime behavior or dynamic execution.
+</p>
+
+<p>
+Its effectiveness depends on the quality of the scanner
+and the transformation definitions provided.
+</p>
+
+<p>
+Like any tool, it should be used with review and validation,
+especially in critical systems.
+</p>
+
+<h3>Who is Dennis designed for?</h3>
+
+<p>
+Dennis is designed for engineers and teams working with
+large or complex codebases where changes must be controlled,
+reviewable, and reproducible.
+</p>
+
+<p>
+It is especially useful in environments involving:
+</p>
+
+<ul>
+<li>large refactors</li>
+<li>system migrations</li>
+<li>security patches</li>
+<li>auditable workflows</li>
+</ul>
+
+<h3>Is Dennis a replacement for Git?</h3>
+
+<p>
+No.
+</p>
+
+<p>
+Git tracks the state of your codebase.
+Dennis tracks and verifies the transformations applied to it.
+</p>
+
+<p>
+Dennis can integrate with Git projects (for example by reusing
+.gitignore rules), but it does not depend on Git and can operate
+in environments where version control is not available.
+</p>
+
+</section>
+
+
+
+<section class="section">
+<h2>Workflow</h2>
+
+<h3>What does a typical Dennis workflow look like?</h3>
+
+<pre>
+scan → plan → pack → sign → verify → apply
+</pre>
+
+<p>
+Each step is explicit and inspectable.
+</p>
+
+
+<h3>Does Dennis modify code immediately?</h3>
+
+<p>
+No. Dennis first generates a plan describing the transformation.
+</p>
+
+<p>
+Only after reviewing the plan do you decide whether to apply it.
+</p>
+
+<h3>Can I use Dennis without an internet connection?</h3>
+
+<p>
+Yes.
+</p>
+
+<p>
+Dennis follows an offline-first philosophy.
+The CLI and DEX artifacts work entirely locally and do not depend on
+cloud services.
+</p>
+
+<p>
+Internet access is only required for optional hosted features such as
+Dennis The Forge.
+</p>
+
+<h3>Can Dennis undo transformations?</h3>
+
+<p>
+Yes. Plans are reversible by design and can generate inverse
+operations when appropriate.
+</p>
+
+</section>
+
+
+
+<section class="section">
+<h2>Open Source</h2>
+
+<h3>Is Dennis open source?</h3>
+
+<p>
+Yes. Dennis is released under the MIT license.
+The CLI and deterministic core will remain open source.
+</p>
+
+
+<h3>Is there a hosted service?</h3>
+
+<p>
+Yes. Dennis The Forge is the hosted platform for storing, sharing,
+and inspecting DEX artifacts. It lives under:
+<a href="https://repo.dennis-forge.com">https://repo.dennis-forge.com</a>
+</p>
+
+<p>
+It provides a structured environment with Workspaces, Projects,
+and artifact visibility controls (private, organization, public).
+</p>
+
+<p>
+However, the CLI and artifact format remain fully independent
+and can be used without the hosted service.
+</p>
+
+</section>
+
+<section class="section">
+<h2>Dennis The Forge</h2>
+
+<h3>What is Dennis The Forge?</h3>
+
+<p>
+Dennis The Forge is a hosted repository for DEX artifacts.
+</p>
+
+<p>
+It allows users to upload, organize, inspect, and share
+transformations through a structured model of Workspaces,
+Projects, and Artifacts.
+</p>
+
+<p>
+It is not required to use Dennis, but provides a collaborative
+layer on top of the CLI.
+</p>
+
+<h3>Can I self-host Dennis The Forge?</h3>
+
+<p>
+Self-hosting options are planned for future versions of
+Dennis The Forge.
+</p>
+
+<p>
+The CLI and artifact format are already fully independent and can be
+used without any hosted services.
+</p>
+
+<p>
+Our goal is to ensure that users never become locked into proprietary
+infrastructure.
+</p>
+
+<h3>What happens if I stop paying?</h3>
+
+<p>
+Your DEX artifacts remain yours.
+</p>
+
+<p>
+Dennis never locks users into proprietary formats.
+Artifacts can always be exported and used locally with the CLI.
+</p>
+
+<p>
+Depending on your plan, uploads and collaboration features may become
+restricted, but your artifacts and transformation history remain
+portable and accessible.
+</p>
+
+<h3>Can Dennis The Forge disappear?</h3>
+
+<p>
+The hosted service may evolve over time, but the DEX format and the
+CLI are designed to remain independent and usable without any central
+infrastructure.
+</p>
+
+<p>
+Your transformations belong to you and can always be exported and
+preserved locally.
+</p>
+
+<h3>What are Workspaces and Projects?</h3>
+
+<p>
+Workspaces are containers for organizing related work.
+</p>
+
+<p>
+Projects live inside Workspaces and group related DEX artifacts.
+</p>
+
+<p>
+This structure allows transformations to be organized in a
+meaningful and scalable way.
+</p>
+
+
+<h3>Who can see my artifacts?</h3>
+
+<p>
+Each artifact has a visibility level:
+</p>
+
+<ul>
+<li><strong>Private</strong> — only you can access it</li>
+<li><strong>Organization</strong> — shared within your organization</li>
+<li><strong>Public</strong> — visible to anyone</li>
+</ul>
+
+<p>
+Only artifacts marked as <strong>public</strong> are visible to
+guest users and the public index.
+</p>
+
+
+<h3>Can I upload duplicate DEX artifacts?</h3>
+
+<p>
+No.
+</p>
+
+<p>
+Artifacts are identified by their hash, ensuring that the same
+DEX artifact cannot be uploaded multiple times.
+</p>
+
+<p>
+This preserves integrity and avoids duplication across the system.
+</p>
+
+
+<h3>Can I use The Forge without an account?</h3>
+
+<p>
+Yes. Guest access allows browsing and downloading of public artifacts.
+</p>
+
+<p>
+However, uploading, organizing, and managing artifacts requires
+a registered account.
+</p>
+
+
+<h3>Does The Forge modify my artifacts?</h3>
+
+<p>
+No.
+</p>
+
+<p>
+Artifacts are stored as-is. The Forge only indexes metadata
+to allow searching and discovery.
+</p>
+
+<p>
+The contents of DEX artifacts remain untouched.
+</p>
+
+</section>
+<section class="section">
+
+<h2>Founder Program</h2>
+
+<h3>What is the Founder Program?</h3>
+
+<p>
+The Founder Program is a limited offering for the first
+161 supporters of Dennis The Forge.
+</p>
+
+<p>
+It was created to help fund the early development of the platform while
+building a small community of people who believed in the project from
+the beginning.
+</p>
+
+<h3>Why only 161 Founder memberships?</h3>
+
+<p>
+The number 161 has been a recurrent lucky number throughout the
+author's life and eventually became part of Dennis lore.
+</p>
+
+<p>
+When the time came to decide how many Founder memberships there would
+be, there was only one possible answer:
+<strong>161.</strong>
+</p>
+
+<h3>What do Founders receive?</h3>
+
+<ul>
+<li>Lifetime updates</li>
+<li>Founder badge</li>
+<li>2× storage allocation</li>
+<li>15% lifetime subscription discount</li>
+<li>15% discount on future storage upgrades and add-ons</li>
+<li>Limited edition personalized mug</li>
+<li>Numbered Founder T-shirt</li>
+<li>A place in the Hall of Founders</li>
+</ul>
+
+</section>
+<section class="section">
+<h2>Future Development</h2>
+
+
+
+<h3>Will Dennis support other languages?</h3>
+
+<p>
+Yes.
+</p>
+
+<p>
+Dennis is designed as an extensible system where transformation
+logic is implemented through plugins.
+</p>
+
+<p>
+Currently, the available implementation focuses on Python.
+Additional language support (such as JavaScript, PHP, Java, C/C++, and others)
+will be introduced through dedicated plugins.
+</p>
+
+<p>
+The goal is to provide a consistent deterministic model
+across different ecosystems.
+</p>
+
+
+<h3>Is the artifact format stable?</h3>
+
+<p>
+The deterministic principles and artifact model are designed
+to remain stable over time so that artifacts remain verifiable
+years into the future.
+</p>
+
+</section>
+
+
+
+<section class="section">
+<h2>Philosophy</h2>
+
+<blockquote>
+“An archive is not merely a place where truths are stored.
+It is a machine built so that tomorrow may still trust yesterday.”
+</blockquote>
+
+<p>
+Dennis exists to make large software transformations transparent,
+reproducible, and accountable.
+</p>
+
+</section>
+<div class="faq-nav">
+<a href="#" onclick="loadPage('index.html')">← Back to Home</a>
+</div>
+</main>
+
+<dennis-footer></dennis-footer>
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+});
+
+document
+  .querySelectorAll('.reveal')
+  .forEach(el => observer.observe(el));
+</script>
+
+<script>
+(function(){
+
+  const k = atob("Mzg7Mzg7NDA7NDA7Mzc7Mzk7Mzc7Mzk7NjY7NjU=").split(";").map(Number);
+  let b = [];
+
+  document.addEventListener("keydown", function(e){
+
+    b.push(e.keyCode);
+
+    if(b.length > k.length){
+      b.shift();
+    }
+
+    if(b.join(",") === k.join(",")){
+
+      const f = document.getElementById("forge-fade");
+      f.style.opacity = 1;
+
+      setTimeout(()=>{
+        location.href="assets/default.html";
+      },900);
+
+    }
+
+  });
+
+})();
+</script>
+<div id="forge-fade"></div>
+</body>
+</html>

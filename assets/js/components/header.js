@@ -31,20 +31,20 @@ class DennisHeader extends HTMLElement {
                 </li>
 
                 <li>
-                    <a href="pricing.html">
+                    <a href="index.html#pricing-preview">
                         Pricing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="faq.html">
+                        FAQs
                     </a>
                 </li>
 
                 <li>
                     <a href="founders.html">
                         Founders
-                    </a>
-                </li>
-
-                <li>
-                    <a href="docs.html">
-                        Docs
                     </a>
                 </li>
 
