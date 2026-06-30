@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dennis Forge — Get Started</title>
+    <meta charset="UTF-8" />
+    <title>Dennis Forge — Get Started</title>
 
-<meta name="description"
-      content="Start your journey with Dennis Forge. Download the CLI, create an account, self-host, or join the Academic and Founder programs." />
+    <meta name="description"
+    content="Start your journey with Dennis Forge. Download the CLI, create an account, self-host, or join the Academic and Founder programs." />
 
-<meta property="og:title"
-      content="Dennis Forge — Get Started" />
+    <meta property="og:title"
+    content="Dennis Forge — Get Started" />
 
-<meta property="og:description"
-      content="Choose the path that best fits your needs and start building with Dennis Forge." />
+    <meta property="og:description"
+    content="Choose the path that best fits your needs and start building with Dennis Forge." />
 
-<meta name="twitter:title"
-      content="Dennis Forge — Get Started" />
+    <meta name="twitter:title"
+    content="Dennis Forge — Get Started" />
 
-<meta name="twitter:description"
-      content="Download the CLI, create an account, self-host, or become a Founder." />
+    <meta name="twitter:description"
+    content="Download the CLI, create an account, self-host, or become a Founder." />
 
-<link rel="canonical"
-      href="https://dennis-forge.com/get-started.html" />
-  
-  <link rel="alternate" hreflang="en" href="https://dennis-forge.com/" />
-  <link rel="alternate" hreflang="es" href="https://dennis-forge.com/index-es.html" />
-  <link rel="alternate" hreflang="de" href="https://dennis-forge.com/index-de.html" />
-  <link rel="alternate" hreflang="x-default" href="https://dennis-forge.com/" />
-  <link rel="preload" as="image" href="assets/img/dennis-forge-hero.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260629" />
-  <script type="application/ld+json">
+    <link rel="canonical"
+    href="https://dennis-forge.com/get-started.html" />
+
+    <link rel="alternate" hreflang="en" href="https://dennis-forge.com/" />
+    <link rel="alternate" hreflang="es" href="https://dennis-forge.com/index-es.html" />
+    <link rel="alternate" hreflang="de" href="https://dennis-forge.com/index-de.html" />
+    <link rel="alternate" hreflang="x-default" href="https://dennis-forge.com/" />
+    <link rel="preload" as="image" href="assets/img/dennis-forge-hero.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260629" />
+    <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Dennis Forge",
-      "applicationCategory": "DeveloperApplication",
-      "operatingSystem": "Cross-platform",
-      "author": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dennis Forge",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform",
+        "author": {
         "@type": "Person",
         "name": "Carlos Revilla"
-      },
-      "description": "Deterministic transformation engine for Git-native projects.",
-      "url": "https://dennis-forge.com/",
-      "license": "https://opensource.org/licenses/MIT",
-      "codeRepository": "https://github.com/crevilla2050/string-audit",
-      "keywords": "codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools"
+        },
+        "description": "Deterministic transformation engine for Git-native projects.",
+        "url": "https://dennis-forge.com/",
+        "license": "https://opensource.org/licenses/MIT",
+        "codeRepository": "https://github.com/crevilla2050/string-audit",
+        "keywords": "codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools"
     }
-  </script>
+    </script>
+    <script src="assets/js/forge.js"></script>
+    <script src="assets/js/components/header.js"></script>
+    <script src="assets/js/components/footer.js"></script>
 </head>
 
 <body>
 
 <!-- ================= HEADER ================= -->
-<header class="site-header">
-  <div class="header-bg"></div>
-
- <div class="header-content">
-  <img src="assets/img/logo.png" class="sidebar-logo" />
-
-<div class="lang-switch">
-  <a href="get-started.html" class="active">EN</a>
-  <a href="#">ES</a>
-  <a href="#">DE</a>
-</div>
-</div>
-</header>
+<dennis-header></dennis-header>
 
   <!-- ===== CONTENT ===== -->
   <main id="main-content">
@@ -364,14 +355,7 @@
     </section>
   </main>  
 
-<footer>
-  Dennis the Forge © Carlos Revilla 2026 ·
-<a href="faq.html">FAQ</a> ·
-<a href="https://github.com/crevilla2050/string-audit">GitHub</a> ·
-⭐ Star the project if you like deterministic tools ·
-<br />
-Built with ❤️ in Mexico and a little bit of Köln.
-</footer>
+<dennis-footer></dennis-footer>
 <script>
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {

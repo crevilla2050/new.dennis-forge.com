@@ -69,6 +69,14 @@ main#main-content {
   padding-top: 120px;
 }
 
+.nav-links a.active {
+    color: var(--accent);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
 .section {
   position: relative;
   z-index: 3;
@@ -623,9 +631,10 @@ main#main-content {
   left: 0;
   right: 0;
   height: 110px;
-  overflow: hidden;
+  overflow: visible;
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  z-index: 1000;
+  z-index: 9999;
+  backdrop-filter: blur(14px);
 }
 
 .header-bg {
@@ -638,9 +647,84 @@ main#main-content {
 .header-content {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
+  gap: 24px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--teal);
+  opacity: 1;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.language-switcher a {
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.language-switcher a:hover,
+.language-switcher a.active {
+  color: var(--teal);
+  opacity: 1;
 }
 
 .header-brand {
@@ -1023,11 +1107,17 @@ footer {
   }
 
   .site-header {
-    position: relative;
-    height: 148px;
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(7, 12, 20, .65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.05);
+}
 
   .sidebar {
     position: relative;
