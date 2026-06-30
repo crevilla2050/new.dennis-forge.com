@@ -33,6 +33,8 @@ Dennis Forge Stylesheet
   }
 }
 
+
+
 /* ================= BASE ================= */
 
 * {
@@ -64,7 +66,7 @@ body {
 main#main-content {
   position: relative;
   z-index: 2;
-  padding-top: 150px;
+  padding-top: 120px;
 }
 
 .section {
@@ -438,6 +440,181 @@ main#main-content {
         0 0 30px rgba(47,212,198,.12);
 }
 
+.getting-started-cards {
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.tutorial-section {
+    padding-top: 2rem;
+}
+
+.tutorial-steps {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tutorial-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(47,212,198,.15);
+    color: var(--accent);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tutorial-step h3 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.tutorial-step p {
+    margin: 0;
+    opacity: .85;
+}
+
+.tutorial-section {
+    padding-top: 1rem;
+}
+
+.tutorial-code {
+    margin: 1rem 0 2rem;
+}
+
+.tutorial-code pre {
+    margin: 0;
+    padding: 1.5rem;
+    background: rgba(0,0,0,.45);
+    border: 1px solid rgba(47,212,198,.15);
+    border-radius: 20px;
+    overflow-x: auto;
+}
+
+.tutorial-code code {
+    font-family:
+        "Fira Code",
+        "JetBrains Mono",
+        monospace;
+    font-size: .95rem;
+    line-height: 1.8;
+}
+.tutorial-cta {
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    background: rgba(47,212,198,.05);
+    border: 1px solid rgba(47,212,198,.15);
+    border-radius: 24px;
+}
+
+.tutorial-cta i {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.tutorial-cta h3 {
+    margin-bottom: 1rem;
+}
+
+.tutorial-cta p {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    opacity: .9;
+}
+
+#first-dex {
+    position: relative;
+    overflow: hidden;
+}
+
+#first-dex::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at top center,
+            rgba(47,212,198,.08),
+            transparent 60%
+        );
+    pointer-events: none;
+}
+
+.flow-steps {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.flow-step {
+    flex: 1 1 180px;
+    max-width: 220px;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 24px;
+    transition: all .3s ease;
+}
+
+.flow-step:hover {
+    transform: translateY(-5px);
+    background: rgba(47,212,198,.05);
+    border-color: rgba(47,212,198,.25);
+}
+
+.flow-step i {
+    font-size: 2.2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.flow-step h3 {
+    margin-bottom: .75rem;
+}
+
+.flow-step p {
+    font-size: .95rem;
+    opacity: .85;
+    line-height: 1.5;
+}
+
+.flow-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    opacity: .5;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .flow-arrow {
+        display: none;
+    }
+}
+
+
 /* ================= HEADER ================= */
 
 .site-header {
@@ -445,7 +622,7 @@ main#main-content {
   top: 0;
   left: 0;
   right: 0;
-  height: 130px;
+  height: 110px;
   overflow: hidden;
   border-bottom: 1px solid rgba(255,255,255,0.06);
   z-index: 1000;
@@ -484,6 +661,16 @@ main#main-content {
 /* Animate header logo */
 .site-header .sidebar-logo {
   animation: forgeGlow 4s ease-in-out infinite;
+}
+
+.hero-text .sidebar-logo {
+    width: 180px;
+    margin: 12px 0 20px;
+    opacity: .9;
+}
+
+.hero-text p {
+    margin-bottom: 2rem;
 }
 
 /* ================= LAYOUT ================= */
@@ -570,7 +757,7 @@ main#main-content {
   gap: 32px;
   align-items: center;
   min-height: 100vh;
-  padding: 110px 5% 48px;
+  padding: 72px 5% 40px;
   isolation: isolate;
   z-index: 2;
 }
@@ -737,6 +924,8 @@ main#main-content {
 /* ================= FOOTER ================= */
 
 footer {
+  position: relative;
+  z-index: 10;
   margin-top: 60px;
   padding: 10px 0;
   letter-spacing: 1px;
@@ -788,6 +977,23 @@ footer {
   .pricing-cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+@media (max-width: 768px) {
+
+    .tutorial-step {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .flow-step {
+        max-width: none;
+    }
+
+    .tutorial-cta {
+        padding: 2rem;
+    }
 }
 
 @media (max-width: 900px) {

@@ -59,9 +59,9 @@
   <img src="assets/img/logo.png" class="sidebar-logo" />
 
 <div class="lang-switch">
-  <a href="index.html" class="active">EN</a>
-  <a href="index-es.html">ES</a>
-  <a href="index-de.html">DE</a>
+  <a href="get-started.html" class="active">EN</a>
+  <a href="#">ES</a>
+  <a href="#">DE</a>
 </div>
 </div>
 </header>
@@ -71,12 +71,11 @@
     <section class="hero">
 
         <div class="hero-text">
-
             <h1>
                 Get Started with
                 <span>Dennis Forge</span>
             </h1>
-            <img src="assets/img/logo.png" />
+            <img src="assets/img/logo.png" class="sidebar-logo"/>
             <p>
                 Whether you're an individual developer,
                 a team, an educator or an enterprise,
@@ -87,12 +86,11 @@
                 <a href="/repo/register" class="btn primary">
                     Create Account
                 </a>
-
-                <a href="https://github.com/crevilla2050/string-audit"
-                class="btn secondary">
-                    Download CLI
+                <a href="#first-dex" class="btn secondary">
+                    Try Hello Dennis
                 </a>
             </div>
+            
 
         </div>
 
@@ -101,8 +99,139 @@
         </div>
 
     </section>
-    <section class="section">
+    <section id="first-dex" class="section">
 
+        <div class="container">
+
+            <h2>Your First DEX in 5 Minutes</h2>
+
+            <p class="section-subtitle">
+                The easiest way to understand Dennis is to build your first artifact.
+                Follow the Hello Dennis tutorial and see the entire workflow in action.
+            </p>
+            <div class="flow-steps">
+
+              <div class="flow-step">
+                  <i class="bi bi-pencil-square"></i>
+                  <h3>1. Write</h3>
+                  <p>Create a transformation plan.</p>
+              </div>
+
+              <div class="flow-arrow">
+                  <i class="bi bi-arrow-right"></i>
+              </div>
+
+              <div class="flow-step">
+                  <i class="bi bi-shield-check"></i>
+                  <h3>2. Validate</h3>
+                  <p>Verify the plan is deterministic.</p>
+              </div>
+
+              <div class="flow-arrow">
+                  <i class="bi bi-arrow-right"></i>
+              </div>
+
+              <div class="flow-step">
+                  <i class="bi bi-lightning-charge"></i>
+                  <h3>3. Apply</h3>
+                  <p>Execute the transformation.</p>
+              </div>
+
+              <div class="flow-arrow">
+                  <i class="bi bi-arrow-right"></i>
+              </div>
+
+              <div class="flow-step">
+                  <i class="bi bi-box-seam"></i>
+                  <h3>4. Pack</h3>
+                  <p>Create a portable DEX artifact.</p>
+              </div>
+
+              
+
+          </div>
+
+        </div>
+
+    </section>
+    <section class="section tutorial-section">
+
+      <div class="container">
+
+          <div class="tutorial-steps">
+              <div class="tutorial-cta">
+
+              <i class="bi bi-rocket-takeoff"></i>
+
+              <h3>Ready to try it?</h3>
+
+              <p>
+                  Clone the repository and build your first deterministic
+                  artifact in less than five minutes.
+              </p>
+
+              <a
+                href="https://github.com/crevilla2050/hello-dennis"
+                class="btn primary"
+                target="_blank">
+                  Start Hello Dennis
+              </a>
+
+          </div>
+              <div class="tutorial-step">
+                  <span class="step-number">1</span>
+                  <div>
+                      <h3>Clone the repository</h3>
+                      <p>Download the Hello Dennis example project.</p>
+                  </div>
+              </div>
+              <div class="tutorial-code">
+
+              <pre><code>
+              git clone https://github.com/crevilla2050/hello-dennis
+              cd hello-dennis
+              </code></pre>
+
+              </div>
+
+              <div class="tutorial-step">
+                  <span class="step-number">2</span>
+                  <div>
+                      <h3>Inspect first artifact</h3>
+                      <p>Inspect, rehydrate and apply your first artifact.</p>
+                  </div>
+              </div>
+
+              <div class="tutorial-code">
+              <pre><code>
+              dennis inspect hello.dex
+              dennis rehydrate hello.dex
+              dennis apply plan.json
+              </code></pre>
+              </div>
+
+              <div class="tutorial-step">
+                  <span class="step-number">3</span>
+                  <div>
+                      <h3>Run your first plan</h3>
+                      <p>Generate your first artifact.</p>
+                  </div>
+              </div>
+
+              <div class="tutorial-step">
+                  <span class="step-number">4</span>
+                  <div>
+                      <h3>Inspect the DEX</h3>
+                      <p>Open the artifact and understand how Dennis works.</p>
+                  </div>
+              </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    <section class="section">
         <div class="container">
 
             <h2>Choose Your Journey</h2>
@@ -113,8 +242,121 @@
 
             <div class="cards getting-started-cards">
 
-                <!-- cards go here -->
+                <div class="card reveal">
 
+                    <i class="bi bi-terminal feature-icon"></i>
+
+                    <h3>Try the CLI</h3>
+
+                    <p>
+                        Download the free and open-source Dennis CLI and start building deterministic transformations today.
+                    </p>
+
+                    <a href="https://github.com/crevilla2050/string-audit"
+                      class="btn secondary">
+                        Download CLI
+                    </a>
+
+                </div>
+                <div class="card tutorial-card">
+
+                    <i class="bi bi-rocket-takeoff feature-icon"></i>
+
+                    <h3>Hello Dennis</h3>
+
+                    <p>
+                        Clone the Hello Dennis repository and create your first
+                        deterministic transformation in just a few minutes.
+                    </p>
+
+                    <div class="code-block">
+                        git clone https://github.com/crevilla2050/hello-dennis
+                    </div>
+
+                    <a
+                        href="https://github.com/crevilla2050/hello-dennis"
+                        class="btn primary"
+                        target="_blank"
+                    >
+                        Start Tutorial
+                    </a>
+
+                </div>
+                <div class="card reveal">
+
+                    <i class="bi bi-cloud feature-icon"></i>
+
+                    <h3>Use Dennis Forge</h3>
+
+                    <p>
+                        Create projects, upload artifacts and collaborate through the hosted Forge platform.
+                    </p>
+
+                    <a href="/repo/register"
+                      class="btn primary">
+                        Create Account
+                    </a>
+
+                </div>
+                <div class="card reveal">
+
+                    <i class="bi bi-server feature-icon"></i>
+
+                    <h3>Self-Host</h3>
+
+                    <p>
+                        Deploy Dennis Forge inside your organization and keep complete control over your infrastructure and data.
+                    </p>
+
+                    <a href="faq.html"
+                      class="btn secondary">
+                        Learn More
+                    </a>
+
+                </div>
+                <div class="card reveal">
+
+                    <i class="bi bi-mortarboard feature-icon"></i>
+
+                    <h3>Academic Program</h3>
+
+                    <p>
+                        Free and discounted plans for students, educators and research institutions.
+                    </p>
+
+                    <a href="index.html#academic"
+                      class="btn secondary">
+                        Learn More
+                    </a>
+
+                </div>
+                <div class="card featured reveal">
+
+                  <i class="bi bi-stars feature-icon"></i>
+
+                  <h3>Become a Founder</h3>
+
+                  <p>
+                      Join the first 161 people helping forge the future of Dennis.
+                  </p>
+
+                  <a href="index.html#founders-preview"
+                    class="btn primary">
+                      Become a Founder
+                  </a>
+
+              </div>
+
+            </div>
+        </div>
+    
+    </section>
+    <section class="section">
+
+        <div class="container">
+
+            <div class="announcement">
+                ❤️ The Dennis CLI is free forever and always will be.
             </div>
 
         </div>
@@ -126,7 +368,9 @@
   Dennis the Forge © Carlos Revilla 2026 ·
 <a href="faq.html">FAQ</a> ·
 <a href="https://github.com/crevilla2050/string-audit">GitHub</a> ·
-⭐ Star the project if you like deterministic tools
+⭐ Star the project if you like deterministic tools ·
+<br />
+Built with ❤️ in Mexico and a little bit of Köln.
 </footer>
 <script>
 const observer = new IntersectionObserver(entries => {
