@@ -922,6 +922,63 @@ nav {
   opacity: 0.7;
   margin-top: 6px;
 }
+
+.founder-number-card {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(47,212,198,.08),
+            rgba(255,255,255,.03)
+        );
+
+    border:
+        1px solid rgba(47,212,198,.18);
+
+    box-shadow:
+        0 0 40px rgba(47,212,198,.08);
+}
+
+.founder-number {
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.founder-number-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    opacity: .9;
+}
+
+.founder-number-card p {
+    max-width: 700px;
+    margin: 1rem auto;
+    line-height: 1.8;
+    opacity: .9;
+}
+
+.founders-hero .hero-icon {
+    font-size: 10rem;
+    color: var(--accent);
+    opacity: .15;
+}
+
+.founder-cta {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
 /* ================= BUTTONS ================= */
 
 .btn {
@@ -950,6 +1007,79 @@ nav {
 .forge-entry-btn:hover {
   transform: translateY(-2px) scale(1.01);
   box-shadow: 0 18px 40px rgba(255,122,24,0.35);
+}
+
+.founders-banner {
+    width: 100%;
+    max-width: 900px;
+    margin: 2.5rem auto 3rem;
+    text-align: center;
+}
+
+.founders-banner-image {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+
+    border-radius: 28px;
+
+    border: 1px solid
+        rgba(47,212,198,.15);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45),
+        0 0 35px rgba(47,212,198,.10);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.founders-banner-image:hover {
+    transform:
+        translateY(-4px)
+        scale(1.01);
+
+    box-shadow:
+        0 35px 80px rgba(0,0,0,.55),
+        0 0 45px rgba(47,212,198,.20);
+}
+
+.founders-banner-caption {
+    margin-top: 1rem;
+    font-size: .95rem;
+    opacity: .65;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+}
+
+.founders-banner {
+    position: relative;
+}
+
+.founders-banner::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 75%;
+    height: 75%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(47,212,198,.18),
+            transparent 70%
+        );
+
+    filter: blur(80px);
+
+    z-index: -1;
 }
 
 .header-forge-btn {
