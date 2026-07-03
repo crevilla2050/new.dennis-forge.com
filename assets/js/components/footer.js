@@ -7,6 +7,7 @@ class DennisFooter extends HTMLElement {
 
         <p>
             Built with ❤️ in Oaxaca and a little bit of Köln.
+            Et hätt noch immer jot jejange.
         </p>
 
         <p>
