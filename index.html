@@ -51,6 +51,9 @@
     <script src="assets/js/forge.js"></script>
     <script src="assets/js/components/header.js"></script>
     <script src="assets/js/components/footer.js"></script>
+    <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAGP4TRRrwRsW-A7JaE6eZdX6vVqpwdSCiZ6kU9FVbLvdl0ga-0x1l2awT-OLZBEWVFXBQmwo0f8vqp08&components=hosted-buttons&disable-funding=venmo&currency=USD">
+    </script>
 </head>
 
 <body>
@@ -335,10 +338,16 @@
             <a href="founders.html" class="btn primary">
                 Become a Founder
             </a>
+            
             </div>
 
         </div>
-
+        <div id="paypal-container-TGQHVZGZUUETC"></div>
+                <script>
+                paypal.HostedButtons({
+                    hostedButtonId: "TGQHVZGZUUETC",
+                }).render("#paypal-container-TGQHVZGZUUETC")
+                </script>
         </section>
     <section id="all-plans" class="section">
 
@@ -508,7 +517,13 @@
                 <a href="founders.html" class="btn primary">
                     Become a Founder
                 </a>
+                <div id="paypal-founder-top"></div>
 
+                <script>
+                paypal.HostedButtons({
+                    hostedButtonId: "TGQHVZGZUUETC"
+                }).render("#paypal-founder-top");
+                </script>
             </div>
 
         </div>
