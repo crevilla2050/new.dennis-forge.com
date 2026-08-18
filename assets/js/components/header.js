@@ -25,20 +25,20 @@ class DennisHeader extends HTMLElement {
                 </li>
 
                 <li>
-                    <a href="get-started.html">
-                        Get Started
+                    <a href="index.html#workflow">
+                        How It Works
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#the-forge">
+                        The Forge
                     </a>
                 </li>
 
                 <li>
                     <a href="index.html#pricing-preview">
                         Pricing
-                    </a>
-                </li>
-
-                <li>
-                    <a href="faq.html">
-                        FAQs
                     </a>
                 </li>
 
@@ -51,12 +51,15 @@ class DennisHeader extends HTMLElement {
             </ul>
 
             <a
-                href="#"
-                class="btn primary forge-register">
-                Create Account
+                href="get-started.html"
+                class="btn primary forge-register"
+                target="_blank"
+                >
+                Get Started
             </a>
 
         </nav>
+
         <div class="language-switcher">
 
             <a href="index.html" class="active">EN</a>
@@ -64,6 +67,7 @@ class DennisHeader extends HTMLElement {
             <a href="index-de.html">DE</a>
 
         </div>
+
     </div>
 
 </header>
