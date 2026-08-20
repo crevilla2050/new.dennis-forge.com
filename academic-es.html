@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <title>Dennis Forge — Programa Académico</title>
+    <title>Dennis Forge — Comenzar</title>
 
     <meta name="description"
-    content="Start your journey with Dennis Forge. Download the CLI, create an account, self-host, or join the Académico and Founder programs." />
+    content="Comienza tu viaje con Dennis Forge. Descarga la CLI, crea una cuenta, autohospeda o únete a los programas Académico y de Fundadores." />
 
-    <meta name="description"
-    content="Free and discounted Dennis Forge access for students, educators and research institutions." />
+    <meta property="og:title"
+    content="Dennis Forge — Comenzar" />
 
     <meta property="og:description"
-    content="Learn about the Programa Académico de Dennis Forge and academic access." />
+    content="Elige el camino que mejor se adapte a tus necesidades y empieza a construir con Dennis Forge." />
 
     <meta name="twitter:title"
-    content="Dennis Forge — Programa Académico" />
+    content="Dennis Forge — Comenzar" />
 
     <meta name="twitter:description"
-    content="Free and discounted Dennis Forge access for students, educators and research institutions." />
+    content="Descarga la CLI, crea una cuenta, autohospeda o conviértete en Fundador." />
 
     <link rel="canonical"
-    href="https://dennis-forge.com/academic.html" />
+    href="https://dennis-forge.com/get-started.html" />
 
     <link rel="alternate" hreflang="en" href="https://dennis-forge.com/" />
     <link rel="alternate" hreflang="es" href="https://dennis-forge.com/index-es.html" />
@@ -40,494 +40,320 @@
         "@type": "Person",
         "name": "Carlos Revilla"
         },
-        "description": "Deterministic transformation engine for Git-native projects.",
+        "description": "Motor de transformación determinista para proyectos nativos de Git.",
         "url": "https://dennis-forge.com/",
         "license": "https://opensource.org/licenses/MIT",
         "codeRepository": "https://github.com/crevilla2050/string-audit",
-        "keywords": "codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools"
+        "keywords": "codemods, refactorización determinista, transformaciones de git, herramientas para desarrolladores, migración de código, análisis estático, herramientas CLI"
     }
     </script>
     <script src="assets/js/forge.js"></script>
-    <script src="assets/js/components/header.js"></script>
-    <script src="assets/js/components/footer.js"></script>
-
+    <script src="assets/js/components/es/header.js"></script>
+    <script src="assets/js/components/es/footer.js"></script>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ================= ENCABEZADO ================= -->
 <dennis-header></dennis-header>
 
-  <!-- ===== CONTENT ===== -->
-  
-<main id="main-content">
+  <!-- ===== CONTENIDO ===== -->
+  <main id="main-content">
+    <section class="hero">
 
-<section class="hero founders-hero">
-    <div class="container hero-grid">
         <div class="hero-text">
             <h1>
-                The Forge
-                <span>Programa Académico</span>
+                Comienza con
+                <span>Dennis Forge</span>
             </h1>
-
+            <img src="assets/img/logo.png" class="sidebar-logo"/>
             <p>
-                We believe the future of software engineering should be
-                reproducible, inspectable and teachable.
+                Ya seas un desarrollador individual,
+                un equipo, un educador o una empresa,
+                hay un lugar para ti en el Forge.
             </p>
 
-            <p>
-                Dennis Forge provides free and discounted access for
-                students, educators and research institutions who want to
-                explore deterministic software transformation in the
-                classroom, laboratory or their own projects.
-            </p>
+            <div class="cta">
+                <a href="https://repo.dennis-forge.com/register" target="_blank"  class="btn primary">
+                    Crear cuenta
+                </a>
+                <a href="#first-dex" class="btn secondary">
+                    Prueba Hola Dennis
+                </a>
+            </div>
 
-            <a href="#academic-access" class="btn primary">
-                Explore Académico Access
-            </a>
+
         </div>
 
         <div class="hero-visual">
-            <i class="bi bi-mortarboard-fill hero-icon"></i>
+            <img src="assets/img/dennis-forge-hero.png">
         </div>
-    </div>
 
-    <div class="hero-visual">
-        <img src="assets/img/dennis-forge-hero.png" alt="Dennis Forge">
-    </div>
-</section>
+    </section>
+    <section id="first-dex" class="section">
 
-<section class="section">
-    <div class="container">
-        <h2>Why an Programa Académico?</h2>
+        <div class="container">
 
-        <p class="section-subtitle">
-            Some of the most important ideas in software engineering
-            deserve to be learned by building with them.
-        </p>
+            <h2>Tu primer DEX en 5 minutos</h2>
 
-        <div class="card reveal">
-            <i class="bi bi-mortarboard-fill feature-icon"></i>
-
-            <h3>Learn by making changes you can prove</h3>
-
-            <p>
-                Dennis is built around a simple idea: a software change
-                should be something people can inspect and understand
-                before it is applied.
+            <p class="section-subtitle">
+                La forma más fácil de entender Dennis es construir tu primer artefacto.
+                Sigue el tutorial Hola Dennis y ve todo el flujo de trabajo en acción.
             </p>
+            <div class="flow-steps">
 
-            <p>
-                Instead of treating transformations as opaque operations,
-                Dennis generates human-readable plans describing what will
-                change. Those plans can be reviewed, shared, packaged and
-                verified before execution.
-            </p>
+              <div class="flow-step">
+                  <i class="bi bi-pencil-square"></i>
+                  <h3>1. Escribir</h3>
+                  <p>Crea un plan de transformación.</p>
+              </div>
 
-            <p>
-                This makes Dennis useful not only as a development tool,
-                but also as a way to teach reproducibility, software
-                transformation, provenance and careful engineering.
-            </p>
-        </div>
-    </div>
-</section>
+              <div class="flow-arrow">
+                  <i class="bi bi-arrow-right"></i>
+              </div>
+
+              <div class="flow-step">
+                  <i class="bi bi-shield-check"></i>
+                  <h3>2. Validar</h3>
+                  <p>Verifica que el plan sea determinista.</p>
+              </div>
+
+              <div class="flow-arrow">
+                  <i class="bi bi-arrow-right"></i>
+              </div>
+
+              <div class="flow-step">
+                  <i class="bi bi-lightning-charge"></i>
+                  <h3>3. Aplicar</h3>
+                  <p>Ejecuta la transformación.</p>
+              </div>
+
+              <div class="flow-arrow">
+                  <i class="bi bi-arrow-right"></i>
+              </div>
+
+              <div class="flow-step">
+                  <i class="bi bi-box-seam"></i>
+                  <h3>4. Empaquetar</h3>
+                  <p>Crea un artefacto DEX portátil.</p>
+              </div>
 
 
-<section class="section">
-    <div class="container">
-        <h2>Descuentos Académicos</h2>
 
-        <p class="section-subtitle">
-            We believe financial circumstances should not prevent students
-            and educators from experimenting with better ways to build software.
-        </p>
-
-        <div class="cards">
-
-            <div class="card reveal">
-                <i class="bi bi-mortarboard-fill feature-icon"></i>
-                <h3>Estudiantes y Docentes</h3>
-                <p>
-                    Los estudiantes y docentes que cumplan los requisitos reciben
-                    <strong>35% off</strong> los planes de pago elegibles de Dennis Forge.
-                </p>
-                <p>
-                    The discount is intended for genuine academic,
-                    educational and learning use.
-                </p>
-            </div>
-
-            <div class="card reveal academic-excellence-card" style="border:2px solid currentColor; transform:scale(1.03);">
-                <i class="bi bi-award-fill feature-icon" style="font-size:3rem;"></i>
-                <h3 style="font-size:1.7rem;">Excelencia Académica</h3>
-                <p style="font-size:1.15rem;">
-                    <strong>Los estudiantes con calificaciones sobresalientes reciben una recompensa.</strong>
-                </p>
-                <p>
-                    Estudiantes who demonstrate straight-A academic performance
-                    receive an <strong>additional 15% discount</strong> on top
-                    of the standard academic discount.
-                </p>
-                <p style="font-size:1.3rem; margin-top:20px;">
-                    <strong>35% + 15% = 50% OFF</strong>
-                </p>
-                <p>
-                    Porque un esfuerzo excepcional merece un apoyo excepcional.
-                </p>
-            </div>
+          </div>
 
         </div>
 
-        <div class="card reveal" style="margin:45px 0; padding:45px 30px; text-align:center; border:3px solid currentColor;">
-            <i class="bi bi-trophy-fill" style="font-size:4rem;"></i>
-            <h3 style="font-size:2.2rem; margin-top:20px;">
-                El Éxito Académico Debe Tener su Recompensa
-            </h3>
-            <p style="font-size:1.2rem; max-width:760px; margin:15px auto;">
-                Work hard. Get straight A's. Build something with Dennis.
-                We will make the Forge substantially more accessible to you.
-            </p>
-            <p style="font-size:1.8rem; margin:25px 0;">
-                <strong>Hasta 50% DE DESCUENTO</strong>
-            </p>
-            <p style="max-width:700px; margin:0 auto;">
-                Start with the standard <strong>35% Académico Descuento</strong>.
-                If you are a straight-A student, you can qualify for an
-                <strong>additional 15%</strong>.
-            </p>
-        </div>
+    </section>
+    <section class="section tutorial-section">
 
-        <div class="card reveal" style="margin-top:30px;">
-            <i class="bi bi-terminal feature-icon"></i>
-            <h3>La CLI de Dennis Sigue Siendo Gratuita</h3>
-            <p>
-                These discounts apply to eligible paid Forge services.
-                The Dennis CLI itself remains <strong>free forever</strong>.
-                Académico status is never required to use the core CLI.
-            </p>
-        </div>
-    </div>
-</section>
+      <div class="container">
 
-<section id="academic-access" class="section">
-    <div class="container">
-        <h2>¿Quién Puede Participar?</h2>
+          <div class="tutorial-steps">
+              <div class="tutorial-cta">
 
-        <p class="section-subtitle">
-            The Programa Académico is intended for people using Dennis
-            for learning, teaching or research.
-        </p>
+              <i class="bi bi-rocket-takeoff"></i>
 
-        <div class="cards">
+              <h3>¿Listo para probarlo?</h3>
 
-            <div class="card reveal">
-                <i class="bi bi-person-workspace feature-icon"></i>
-                <h3>Estudiantes</h3>
-                <p>
-                    Estudiantes learning software engineering, programming,
-                    refactoring, automation or related disciplines can
-                    use the Programa Académico to experiment with Dennis
-                    and deterministic transformations.
-                </p>
-            </div>
+              <p>
+                  Clona el repositorio y construye tu primer artefacto
+                  determinista en menos de cinco minutos.
+              </p>
 
-            <div class="card reveal">
-                <i class="bi bi-easel2 feature-icon"></i>
-                <h3>Educadores</h3>
-                <p>
-                    Docentes and instructors can introduce Dennis into
-                    courses, workshops and practical exercises where
-                    students need to understand how software changes are
-                    planned, reviewed and applied.
-                </p>
-            </div>
+              <a
+                href="https://github.com/crevilla2050/hello-dennis"
+                class="btn primary"
+                target="_blank">
+                  Iniciar Hola Dennis
+              </a>
 
-            <div class="card reveal">
-                <i class="bi bi-flask feature-icon"></i>
-                <h3>Research Institutions</h3>
-                <p>
-                    Research groups and academic institutions can use
-                    Dennis when reproducibility, traceability and
-                    inspectable transformations are relevant to their work.
-                </p>
-            </div>
+          </div>
+              <div class="tutorial-step">
+                  <span class="step-number">1</span>
+                  <div>
+                      <h3>Clona el repositorio</h3>
+                      <p>Descarga el proyecto de ejemplo Hola Dennis.</p>
+                  </div>
+              </div>
+              <div class="tutorial-code">
 
-        </div>
-    </div>
-</section>
+              <pre><code>
+              git clone https://github.com/crevilla2050/hello-dennis
+              cd hello-dennis
+              </code></pre>
 
-<section class="section">
-    <div class="container">
-        <h2>What Can You Explore?</h2>
+              </div>
 
-        <p class="section-subtitle">
-            Dennis provides a practical environment for studying ideas
-            that normally remain hidden inside development tooling.
-        </p>
+              <div class="tutorial-step">
+                  <span class="step-number">2</span>
+                  <div>
+                      <h3>Inspecciona el primer artefacto</h3>
+                      <p>Inspecciona, rehidrata y aplica tu primer artefacto.</p>
+                  </div>
+              </div>
 
-        <div class="cards">
+              <div class="tutorial-code">
+              <pre><code>
+              dennis inspect hello.dex
+              dennis rehydrate hello.dex
+              dennis apply plan.json
+              </code></pre>
+              </div>
 
-            <div class="card reveal">
-                <i class="bi bi-arrow-repeat feature-icon"></i>
-                <h3>Software Transformation</h3>
-                <p>
-                    Explore how large numbers of source changes can be
-                    represented as explicit, deterministic transformations.
-                </p>
-            </div>
+              <div class="tutorial-step">
+                  <span class="step-number">3</span>
+                  <div>
+                      <h3>Ejecuta tu primer plan</h3>
+                      <p>Genera tu primer artefacto.</p>
+                  </div>
+              </div>
 
-            <div class="card reveal">
-                <i class="bi bi-file-earmark-text feature-icon"></i>
-                <h3>Human-Readable Plans</h3>
-                <p>
-                    Study the difference between deciding what should
-                    change and actually executing that change.
-                </p>
-            </div>
+              <div class="tutorial-step">
+                  <span class="step-number">4</span>
+                  <div>
+                      <h3>Inspecciona el DEX</h3>
+                      <p>Abre el artefacto y entiende cómo funciona Dennis.</p>
+                  </div>
+              </div>
 
-            <div class="card reveal">
-                <i class="bi bi-shield-check feature-icon"></i>
-                <h3>Verificación</h3>
-                <p>
-                    Examine how deterministic diffs and verification can
-                    turn software changes into evidence that can be checked
-                    and reproduced.
-                </p>
-            </div>
-
-            <div class="card reveal">
-                <i class="bi bi-diagram-3 feature-icon"></i>
-                <h3>Provenance &amp; Lineage</h3>
-                <p>
-                    Explore how transformation artifacts can preserve
-                    where a change came from and how it evolved.
-                </p>
-            </div>
-
-            <div class="card reveal">
-                <i class="bi bi-box-seam feature-icon"></i>
-                <h3>DEX Artifacts</h3>
-                <p>
-                    Learn how deterministic transformation plans can be
-                    packaged into portable artifacts that can be inspected,
-                    shared and verified.
-                </p>
-            </div>
-
-            <div class="card reveal">
-                <i class="bi bi-git feature-icon"></i>
-                <h3>Reproducible Engineering</h3>
-                <p>
-                    Use Git-native workflows to investigate how the same
-                    input can produce stable and verifiable results.
-                </p>
-            </div>
+          </div>
 
         </div>
-    </div>
-</section>
 
-<section class="section">
-    <div class="container">
+      </section>
+    <section class="section">
+        <div class="container">
 
-        <div class="announcement">
-            ❤️ The Dennis CLI is free forever and always will be.
-        </div>
+            <h2>Elige tu camino</h2>
 
-        <div class="card reveal">
-            <i class="bi bi-terminal feature-icon"></i>
-
-            <h3>Start with the CLI</h3>
-
-            <p>
-                The Programa Académico builds on the same principle as the
-                rest of Dennis Forge: the core tool should remain available
-                and usable without depending on the hosted service.
+            <p class="section-subtitle">
+                Comienza donde estás hoy y crece con Dennis Forge.
             </p>
 
-            <p>
-                Estudiantes and researchers can therefore begin experimenting
-                locally and use the Forge platform when hosted collaboration
-                or additional services are useful.
-            </p>
+            <div class="cards getting-started-cards">
 
-            <div class="cta" style="justify-content:center; margin-top:30px;">
-                <a href="https://github.com/crevilla2050/string-audit"
-                   class="btn secondary" target="_blank" rel="noopener">
-                    Explore Dennis on GitHub
-                </a>
+                <div class="card reveal">
 
-                <a href="get-started.html" class="btn primary">
-                    Comenzar
-                </a>
+                    <i class="bi bi-terminal feature-icon"></i>
+
+                    <h3>Prueba la CLI</h3>
+
+                    <p>
+                        Descarga la CLI gratuita y de código abierto de Dennis y empieza a construir transformaciones deterministas hoy mismo.
+                    </p>
+
+                    <a href="https://github.com/crevilla2050/string-audit"
+                      class="btn secondary">
+                        Descargar CLI
+                    </a>
+
+                </div>
+                <div class="card tutorial-card">
+
+                    <i class="bi bi-rocket-takeoff feature-icon"></i>
+
+                    <h3>Hola Dennis</h3>
+
+                    <p>
+                        Clona el repositorio Hola Dennis y crea tu primera
+                        transformación determinista en solo unos minutos.
+                    </p>
+
+                    <div class="code-block">
+                        git clone https://github.com/crevilla2050/hello-dennis
+                    </div>
+
+                    <a
+                        href="https://github.com/crevilla2050/hello-dennis"
+                        class="btn primary"
+                        target="_blank"
+                    >
+                        Iniciar tutorial
+                    </a>
+
+                </div>
+                <div class="card reveal">
+
+                    <i class="bi bi-cloud feature-icon"></i>
+
+                    <h3>Usa Dennis Forge</h3>
+
+                    <p>
+                        Crea proyectos, sube artefactos y colabora a través de la plataforma Forge alojada.
+                    </p>
+
+                    <a href="https://repo.dennis-forge.com/register" target="_blank" 
+                      class="btn primary">
+                        Crear cuenta
+                    </a>
+
+                </div>
+                <div class="card reveal">
+
+                    <i class="bi bi-server feature-icon"></i>
+
+                    <h3>Autohospedaje</h3>
+
+                    <p>
+                        Despliega Dennis Forge dentro de tu organización y mantén el control total sobre tu infraestructura y datos.
+                    </p>
+
+                    <a href="faq.html"
+                      class="btn secondary">
+                        Saber más
+                    </a>
+
+                </div>
+                <div class="card reveal">
+
+                    <i class="bi bi-mortarboard feature-icon"></i>
+
+                    <h3>Programa Académico</h3>
+
+                    <p>
+                        Planes gratuitos y con descuento para estudiantes, educadores e instituciones de investigación.
+                    </p>
+
+                    <a href="index.html#academic"
+                      class="btn secondary">
+                        Saber más
+                    </a>
+
+                </div>
+                <div class="card featured reveal">
+
+                  <i class="bi bi-stars feature-icon"></i>
+
+                  <h3>Conviértete en Fundador</h3>
+
+                  <p>
+                      Únete a las primeras 161 personas que están ayudando a forjar el futuro de Dennis.
+                  </p>
+
+                  <a href="index.html#founders-preview"
+                    class="btn primary">
+                      Conviértete en Fundador
+                  </a>
+
+              </div>
+
             </div>
         </div>
+    
+    </section>
+    <section class="section">
 
-    </div>
-</section>
+        <div class="container">
 
-<section class="section">
-    <div class="container">
-
-        <h2>Académico Access</h2>
-
-        <p class="section-subtitle">
-            We want the economics of learning and research to be a
-            smaller barrier than the cost of experimentation.
-        </p>
-
-        <div class="card reveal">
-            <i class="bi bi-heart feature-icon"></i>
-
-            <h3>Free and Descuentoed Plans</h3>
-
-            <p>
-                Eligible students, educators and research institutions
-                can receive free or discounted Dennis Forge plans,
-                depending on their academic use.
-            </p>
-
-            <p>
-                The goal is simple: if you are using Dennis to learn,
-                teach or investigate software engineering, we want to
-                make it practical for you to do so.
-            </p>
-
-            <p>
-                Académico access is intended for genuine educational and
-                research use. Commercial use belongs under the regular
-                Forge plans.
-            </p>
-
-            <div class="cta" style="justify-content:center; margin-top:30px;">
-                <a href="mailto:academic@dennis-forge.com"
-                   class="btn primary">
-                    Ask Acerca de Académico Access
-                </a>
+            <div class="announcement">
+                ❤️ La CLI de Dennis es gratuita para siempre y siempre lo será.
             </div>
+
         </div>
 
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-
-        <h2>Build. Inspect. Understand.</h2>
-
-        <p class="section-subtitle">
-            The Programa Académico is not about giving students a
-            simplified version of Dennis. It is about giving them
-            access to the real ideas behind it.
-        </p>
-
-        <div class="founder-number-card reveal">
-            <p>
-                Software engineering becomes much easier to reason about
-                when the transformation itself is visible.
-            </p>
-
-            <p>
-                A plan can be read. A DEX artifact can be inspected.
-                A signature can be verified. A diff can be reproduced.
-            </p>
-
-            <p>
-                These are not merely product features. They are ideas
-                worth understanding.
-            </p>
-
-            <p>
-                <strong>
-                    We want students to leave the Forge knowing not only
-                    how to change software, but how to know what changed.
-                </strong>
-            </p>
-        </div>
-
-    </div>
-</section>
-
-
-<section class="section">
-    <div class="container">
-        <h2>Términos del Programa Académico</h2>
-
-        <p class="section-subtitle">
-            Unas pocas reglas sencillas mantienen el programa justo y sostenible.
-        </p>
-
-        <div class="card reveal">
-            <ul>
-                <li>
-                    Académico discounts are available to eligible students
-                    and teachers and may require reasonable proof of academic status.
-                </li>
-                <li>
-                    El descuento académico estándar es <strong>35%</strong>.
-                </li>
-                <li>
-                    <strong>Excelencia Académica:</strong> eligible straight-A
-                    students may receive an additional <strong>15%</strong>,
-                    for a total discount of <strong>50%</strong>.
-                </li>
-                <li>
-                    Excelencia Académica status may require current academic
-                    records or other reasonable evidence of straight-A performance.
-                </li>
-                <li>
-                    Descuentos apply to eligible paid Forge plans and are not
-                    intended for commercial use under an academic identity.
-                </li>
-                <li>
-                    Académico discounts are personal, non-transferable and may
-                    not be combined with other promotional discounts unless
-                    explicitly stated otherwise.
-                </li>
-                <li>
-                    Dennis Forge may periodically request verification that
-                    eligibility is still valid.
-                </li>
-                <li>
-                    La CLI de Dennis sigue siendo gratuita independientemente de la condición académica.
-                </li>
-                <li>
-                    Dennis Forge reserves the right to refuse or revoke academic
-                    pricing where eligibility requirements are not met or where
-                    the program is being abused.
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="founder-cta">
-            <h2>Ready to Explore?</h2>
-
-            <p>
-                Start with the free Dennis CLI, explore the documentation,
-                or contact us about Programa Académico access.
-            </p>
-
-            <div class="cta" style="justify-content:center; margin-top:30px;">
-                <a href="get-started.html" class="btn primary">
-                    Comenzar
-                </a>
-
-                <a href="mailto:academic@dennis-forge.com"
-                   class="btn secondary">
-                    Contacto the Programa Académico
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-</main>
-</main>  
+    </section>
+  </main>  
 
 <dennis-footer></dennis-footer>
 <script>
