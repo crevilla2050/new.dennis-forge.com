@@ -47,6 +47,11 @@ class DennisHeader extends HTMLElement {
                         Fundadores
                     </a>
                 </li>
+                <li>
+                    <a href="use-cases-es.html">
+                        Casos de uso
+                    </a>
+                </li>
             </ul>
 
             <a

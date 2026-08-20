@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dennis Forge — Use Cases</title>
+
+    <meta name="description"
+          content="Explore real-world use cases for Dennis Forge: refactoring, migrations, security patches, auditability, provenance, documentation, localization, and reproducible software transformations." />
+
+    <meta property="og:title"
+          content="Dennis Forge — Use Cases" />
+
+    <meta property="og:description"
+          content="See where deterministic, inspectable software transformations can make a real difference." />
+
+    <link rel="canonical"
+          href="https://dennis-forge.com/use-cases.html" />
+
+    <link rel="alternate" hreflang="en" href="https://dennis-forge.com/use-cases.html" />
+    <link rel="alternate" hreflang="es" href="https://dennis-forge.com/use-cases-es.html" />
+    <link rel="alternate" hreflang="x-default" href="https://dennis-forge.com/use-cases.html" />
+
+    <link rel="preload" as="image" href="assets/img/dennis-forge-hero.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260629" />
+
+    <script src="assets/js/forge.js"></script>
+    <script src="assets/js/components/header.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+</head>
+
+<body>
+
+<dennis-header></dennis-header>
+
+<main id="main-content">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero founders-hero">
+
+        <div class="container hero-grid">
+
+            <div class="hero-text">
+
+                <h1>
+                    Real problems.
+                    <span>Inspectable transformations.</span>
+                </h1>
+
+                <p>
+                    Dennis is useful anywhere a change needs to be more than
+                    "something that happened to the files."
+                </p>
+
+                <p>
+                    When a transformation matters, Dennis turns it into a
+                    deterministic, human-readable artifact that can be reviewed,
+                    shared, verified, reproduced and applied later.
+                </p>
+
+                <a href="#software" class="btn primary">
+                    Explore the Use Cases
+                </a>
+
+            </div>
+
+            <div class="hero-visual">
+                <i class="bi bi-lightbulb-fill hero-icon"></i>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+            <img src="assets/img/dennis-forge-hero.png"
+                 alt="Dennis Forge">
+        </div>
+
+    </section>
+
+
+    <!-- ================= SOFTWARE ENGINEERING ================= -->
+    <section id="software" class="section">
+
+        <div class="container">
+
+            <h2>Software Engineering</h2>
+
+            <p class="section-subtitle">
+                The obvious use case — and only the beginning.
+                Dennis is designed for changes that would otherwise be
+                difficult to review, reproduce or trust.
+            </p>
+
+            <div class="cards">
+
+                <div class="card reveal">
+                    <i class="bi bi-arrow-repeat feature-icon"></i>
+
+                    <h3>Large Refactors</h3>
+
+                    <p>
+                        Plan structured changes across large codebases before
+                        touching the files. Review the transformation and apply
+                        it only when you are ready.
+                    </p>
+
+                    <p>
+                        The plan becomes a durable description of what the
+                        refactor was supposed to do.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-signpost-split feature-icon"></i>
+
+                    <h3>Language &amp; Framework Migrations</h3>
+
+                    <p>
+                        Framework and API migrations often involve thousands
+                        of small, repetitive changes.
+                    </p>
+
+                    <p>
+                        Generate a deterministic plan once, inspect it, package
+                        it, and replay the same transformation across projects.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-git feature-icon"></i>
+
+                    <h3>Git-Based Projects</h3>
+
+                    <p>
+                        Use Dennis alongside Git to transform tracked projects
+                        while keeping the transformation itself explicit and
+                        independently verifiable.
+                    </p>
+
+                    <p>
+                        The source repository remains the source of the project;
+                        Dennis preserves the transformation that happened to it.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-shield-lock feature-icon"></i>
+
+                    <h3>Security Patches</h3>
+
+                    <p>
+                        Security fixes can be distributed as signed DEX artifacts.
+                        Recipients can verify the artifact and inspect the
+                        transformation before applying it.
+                    </p>
+
+                    <p>
+                        That makes the patch itself part of the evidence.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRUST ================= -->
+    <section id="trust" class="section">
+
+        <div class="container">
+
+            <h2>When the Change Itself Is Evidence</h2>
+
+            <p class="section-subtitle">
+                Some transformations are not merely implementation details.
+                They need provenance, accountability or independent verification.
+            </p>
+
+            <div class="cards">
+
+                <div class="card reveal">
+                    <i class="bi bi-clipboard2-check feature-icon"></i>
+
+                    <h3>Audit Trails &amp; Compliance</h3>
+
+                    <p>
+                        A DEX artifact can preserve the plan, metadata, lineage
+                        and optional cryptographic signatures associated with
+                        a transformation.
+                    </p>
+
+                    <p>
+                        This creates a structured record of what changed,
+                        rather than relying on memory or an opaque deployment log.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-link-45deg feature-icon"></i>
+
+                    <h3>Chain of Custody</h3>
+
+                    <p>
+                        Transformations can move between people, machines and
+                        organizations without losing their identity.
+                    </p>
+
+                    <p>
+                        Lineage and signatures allow recipients to establish
+                        where an artifact came from and how it relates to
+                        previous transformations.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-fingerprint feature-icon"></i>
+
+                    <h3>Forensic Traceability</h3>
+
+                    <p>
+                        When something changed months ago, the useful question
+                        is often not simply "what is different now?"
+                    </p>
+
+                    <p>
+                        Dennis can preserve the transformation history so that
+                        the evolution of a project can be reconstructed and checked.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-broadcast-pin feature-icon"></i>
+
+                    <h3>Independent Disclosure</h3>
+
+                    <p>
+                        DEX artifacts are portable. A transformation can therefore
+                        be shared independently of the platform that was used to
+                        create or distribute it.
+                    </p>
+
+                    <p>
+                        Researchers, auditors and teams can exchange verifiable
+                        evidence without surrendering ownership of the artifact.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTENT ================= -->
+    <section id="content" class="section">
+
+        <div class="container">
+
+            <h2>Beyond Source Code</h2>
+
+            <p class="section-subtitle">
+                The same principle applies whenever a document contains
+                meaningful human content that needs to survive a transformation.
+            </p>
+
+            <div class="cards">
+
+                <div class="card reveal">
+                    <i class="bi bi-translate feature-icon"></i>
+
+                    <h3>Localization &amp; Internationalization</h3>
+
+                    <p>
+                        Extract meaningful strings into a dictionary, let a human
+                        edit the translations, and generate a deterministic plan
+                        describing exactly what will change.
+                    </p>
+
+                    <p>
+                        Dennis regions can explicitly identify content that is
+                        intended for transformation while leaving everything else
+                        alone.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-file-earmark-text feature-icon"></i>
+
+                    <h3>Documents &amp; Office Files</h3>
+
+                    <p>
+                        A document can be treated as a transformation source rather
+                        than an opaque binary blob: extract meaningful text,
+                        preserve a dictionary, and produce a transformed document
+                        that another user can rehydrate and review.
+                    </p>
+
+                    <p>
+                        The goal is the same: preserve both the content and the
+                        history of how that content was changed.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-braces feature-icon"></i>
+
+                    <h3>Explicit Content Regions</h3>
+
+                    <p>
+                        Users can mark text explicitly with Dennis regions such as
+                        <code>[{#text to change#}]</code>.
+                    </p>
+
+                    <p>
+                        Regions remove guesswork. If text is marked for transformation,
+                        Dennis treats the marked content as content — including
+                        embedded markup — rather than trying to reinterpret it.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-pencil-square feature-icon"></i>
+
+                    <h3>Human-Edited Transformations</h3>
+
+                    <p>
+                        A recipient can rehydrate an artifact, edit the actual
+                        document, and then run Dennis again to discover what changed.
+                    </p>
+
+                    <p>
+                        The resulting plan can be packaged for another person,
+                        preserving the transformation instead of merely shipping
+                        the final file.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TEAMS ================= -->
+    <section id="teams" class="section">
+
+        <div class="container">
+
+            <h2>Teams &amp; Organizations</h2>
+
+            <p class="section-subtitle">
+                Dennis becomes particularly useful when the person who creates
+                a transformation is not the person who applies it.
+            </p>
+
+            <div class="cards">
+
+                <div class="card reveal">
+                    <i class="bi bi-people feature-icon"></i>
+
+                    <h3>Team Transformations</h3>
+
+                    <p>
+                        Share DEX artifacts between developers and teams so that
+                        a transformation can be understood and reproduced beyond
+                        the machine where it was created.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-check2-square feature-icon"></i>
+
+                    <h3>Review Before Execution</h3>
+
+                    <p>
+                        Separate deciding what should happen from actually doing it.
+                        A plan can be reviewed by another developer, manager,
+                        auditor or customer before execution.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-box-arrow-up-right feature-icon"></i>
+
+                    <h3>Portable Delivery</h3>
+
+                    <p>
+                        Send the transformation itself instead of sending a
+                        modified directory and asking everyone to trust the result.
+                    </p>
+
+                    <p>
+                        The recipient receives something inspectable, portable
+                        and independently verifiable.
+                    </p>
+                </div>
+
+
+                <div class="card reveal">
+                    <i class="bi bi-cloud-arrow-down feature-icon"></i>
+
+                    <h3>Hosted or Self-Hosted</h3>
+
+                    <p>
+                        The Forge can provide storage, discovery and collaboration,
+                        while the underlying DEX artifacts remain portable and
+                        usable with the Dennis CLI.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PHILOSOPHY ================= -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="founder-cta">
+
+                <h2>Don't Just Change It.</h2>
+
+                <p>
+                    Preserve the transformation that changed it.
+                </p>
+
+                <p>
+                    That is the difference between a file that happens to be
+                    different and a transformation that can be understood,
+                    verified and trusted.
+                </p>
+
+                <div class="cta"
+                     style="justify-content:center; margin-top:30px;">
+
+                    <a href="get-started.html"
+                       class="btn primary">
+                        Get Started
+                    </a>
+
+                    <a href="index.html"
+                       class="btn secondary">
+                        Back to Dennis Forge
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<dennis-footer></dennis-footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+document
+    .querySelectorAll('.reveal')
+    .forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
