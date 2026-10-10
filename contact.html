@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dennis Forge — Contact form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dennis Forge is a deterministic codemod engine for Git projects. Create checkable, exportable and reversible transformation plans." />
+    <meta name="keywords" content="codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools" />
+    <meta name="author" content="Carlos Revilla" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f1416" />
+
+    <meta property="og:title" content="Dennis Forge — Contact form" />
+    <meta property="og:description" content="Get in touch with the Dennis Forge team." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dennis-forge.com/contact.html" />
+    <meta property="og:image" content="https://dennis-forge.com/assets/img/dennis-forge-hero.png" />
+    <meta property="og:site_name" content="Dennis Forge" />
+    <meta name="google-site-verification" content="ADD_LATER" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dennis Forge — Deterministic Codemods" />
+    <meta name="twitter:description" content="Deterministic engine for Git transformations. No magic. No lock-in." />
+    <meta name="twitter:image" content="https://dennis-forge.com/assets/img/dennis-forge-hero.png" />
+    <link rel="canonical" href="https://dennis-forge.com/" />
+
+    <link rel="alternate" hreflang="en" href="https://dennis-forge.com/" />
+    <link rel="alternate" hreflang="es" href="https://dennis-forge.com/index-es.html" />
+    <link rel="alternate" hreflang="de" href="https://dennis-forge.com/index-de.html" />
+    <link rel="alternate" hreflang="x-default" href="https://dennis-forge.com/" />
+    <link rel="preload" as="image" href="assets/img/dennis-forge-hero.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260629" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dennis Forge",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform",
+        "author": {
+        "@type": "Person",
+        "name": "Carlos Revilla"
+        },
+        "description": "Deterministic transformation engine for Git-native projects.",
+        "url": "https://dennis-forge.com/",
+        "license": "https://opensource.org/licenses/MIT",
+        "codeRepository": "https://github.com/crevilla2050/string-audit",
+        "keywords": "codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools"
+    }
+    </script>
+    <script src="assets/js/forge.js"></script>
+    <script src="assets/js/components/header.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+    <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAGP4TRRrwRsW-A7JaE6eZdX6vVqpwdSCiZ6kU9FVbLvdl0ga-0x1l2awT-OLZBEWVFXBQmwo0f8vqp08&components=hosted-buttons&disable-funding=venmo&currency=USD">
+    </script>
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <dennis-header></dennis-header>
+
+    <style>
+        /* =========================================================
+           CONTACT PAGE
+           ========================================================= */
+
+        .contact-page {
+            background:
+                linear-gradient(
+                    rgba(15, 23, 42, 0.92),
+                    rgba(15, 23, 42, 0.96)
+                ),
+                url("assets/images/hero.jpg") center center / cover fixed no-repeat;
+        }
+
+        /*
+         * Atmospheric fixed background.
+         * The image remains stationary while the page scrolls.
+         */
+        .contact-page::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7, 12, 20, 0.96),
+                    rgba(7, 12, 20, 0.84)
+                ),
+                url("img/dennis-forge-hero.png")
+                    center center / cover no-repeat;
+
+            opacity: 0.62;
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        /*
+         * Subtle Forge-colored atmospheric glow.
+         */
+        .contact-page::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+
+            background:
+                radial-gradient(
+                    circle at 75% 30%,
+                    rgba(47, 212, 198, 0.12),
+                    transparent 42%
+                ),
+                radial-gradient(
+                    circle at 20% 75%,
+                    rgba(255, 122, 24, 0.07),
+                    transparent 38%
+                );
+
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .contact-main {
+            width: min(1120px, 92%);
+            margin: 0 auto;
+            padding: 110px 0 90px;
+        }
+
+        /* ---------------------------------------------------------
+           Intro
+           --------------------------------------------------------- */
+
+        .contact-intro {
+            max-width: 760px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .contact-kicker {
+            display: inline-block;
+            margin-bottom: 14px;
+
+            color: #2fd4c6;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        .contact-intro h1 {
+            margin: 0 0 18px;
+
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            line-height: 1.05;
+            letter-spacing: -0.035em;
+        }
+
+        .contact-intro h1 span {
+            color: #2fd4c6;
+        }
+
+        .contact-intro p {
+            max-width: 650px;
+            margin: 0 auto;
+
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 1.08rem;
+            line-height: 1.75;
+        }
+
+        /* ---------------------------------------------------------
+           Main contact layout
+           --------------------------------------------------------- */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 320px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* ---------------------------------------------------------
+           Glass cards
+           --------------------------------------------------------- */
+
+        .contact-card,
+        .contact-side-card {
+            background: rgba(10, 18, 25, 0.68);
+            border: 1px solid rgba(47, 212, 198, 0.16);
+            border-radius: 24px;
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.45),
+                0 0 35px rgba(47, 212, 198, 0.06);
+        }
+
+        .contact-card {
+            padding: 38px;
+        }
+
+        .contact-card h2 {
+            margin: 0 0 8px;
+            font-size: 1.55rem;
+        }
+
+        .contact-card > p {
+            margin: 0 0 28px;
+            color: rgba(255, 255, 255, 0.62);
+            line-height: 1.6;
+        }
+
+        /* ---------------------------------------------------------
+           Form
+           --------------------------------------------------------- */
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+
+            background: rgba(255, 255, 255, 0.055);
+            color: #fff;
+
+            font: inherit;
+
+            outline: none;
+
+            transition:
+                border-color 0.2s ease,
+                background 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .form-group input {
+            min-height: 48px;
+            padding: 0 15px;
+        }
+
+        .form-group textarea {
+            min-height: 170px;
+            padding: 14px 15px;
+            resize: vertical;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.32);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: rgba(47, 212, 198, 0.65);
+            background: rgba(47, 212, 198, 0.045);
+
+            box-shadow:
+                0 0 0 3px rgba(47, 212, 198, 0.08),
+                0 0 25px rgba(47, 212, 198, 0.05);
+        }
+
+        /* ---------------------------------------------------------
+           CAPTCHA
+           --------------------------------------------------------- */
+
+        .captcha-box {
+            display: grid;
+            grid-template-columns: 1fr 150px;
+            gap: 15px;
+            align-items: end;
+
+            padding: 18px;
+
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 14px;
+
+            background: rgba(0, 0, 0, 0.16);
+        }
+
+        .captcha-question {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .captcha-question strong {
+            display: block;
+            margin-top: 3px;
+
+            color: #2fd4c6;
+            font-size: 1.05rem;
+        }
+
+        /* ---------------------------------------------------------
+           Submit
+           --------------------------------------------------------- */
+
+        .contact-actions {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .contact-submit {
+            border: 0;
+            border-radius: 12px;
+
+            padding: 13px 24px;
+
+            background: linear-gradient(
+                135deg,
+                #2fd4c6,
+                #1baea3
+            );
+
+            color: #061014;
+
+            font: inherit;
+            font-weight: 800;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 25px rgba(47, 212, 198, 0.18);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                filter 0.2s ease;
+        }
+
+        .contact-submit:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 12px 32px rgba(47, 212, 198, 0.28);
+
+            filter: brightness(1.08);
+        }
+
+        .contact-submit:disabled {
+            cursor: wait;
+            opacity: 0.6;
+            transform: none;
+        }
+
+        /* ---------------------------------------------------------
+           WhatsApp
+           --------------------------------------------------------- */
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+
+            min-height: 46px;
+            padding: 0 17px;
+
+            border: 1px solid rgba(47, 212, 198, 0.22);
+            border-radius: 12px;
+
+            background: rgba(47, 212, 198, 0.07);
+
+            color: #2fd4c6;
+            text-decoration: none;
+            font-weight: 700;
+
+            transition:
+                background 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .whatsapp-button:hover {
+            background: rgba(47, 212, 198, 0.13);
+            border-color: rgba(47, 212, 198, 0.45);
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-icon {
+            font-size: 1.15rem;
+        }
+
+        /* ---------------------------------------------------------
+           Status
+           --------------------------------------------------------- */
+
+        .form-status {
+            min-height: 22px;
+            margin: 0;
+
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .form-status.success {
+            color: #2fd4c6;
+        }
+
+        .form-status.error {
+            color: #ff9d6c;
+        }
+
+        /* ---------------------------------------------------------
+           Side information
+           --------------------------------------------------------- */
+
+        .contact-side {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .contact-side-card {
+            padding: 28px;
+        }
+
+        .contact-side-card h3 {
+            margin: 0 0 12px;
+            font-size: 1.1rem;
+        }
+
+        .contact-side-card p {
+            margin: 0;
+
+            color: rgba(255, 255, 255, 0.61);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        .contact-side-card strong {
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        .contact-email {
+            display: inline-block;
+            margin-top: 13px;
+
+            color: #2fd4c6;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        .forge-mark {
+            color: #ff7a18;
+        }
+
+        /* ---------------------------------------------------------
+           Narrow screens
+           --------------------------------------------------------- */
+
+        @media (max-width: 850px) {
+            .contact-main {
+                width: min(94%, 680px);
+                padding-top: 95px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-side {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contact-main {
+                width: 92%;
+                padding: 82px 0 60px;
+            }
+
+            .contact-intro {
+                margin-bottom: 32px;
+            }
+
+            .contact-intro h1 {
+                font-size: clamp(2.35rem, 13vw, 3.3rem);
+            }
+
+            .contact-intro p {
+                font-size: 0.98rem;
+            }
+
+            .contact-card {
+                padding: 24px 18px;
+                border-radius: 19px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .captcha-box {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .contact-submit,
+            .whatsapp-button {
+                width: 100%;
+            }
+
+            .contact-side {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-side-card {
+                padding: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         CANONICAL HEADER
+         ========================================================= -->
+    <dennis-header></dennis-header>
+
+
+    <!-- =========================================================
+         CONTACT PAGE
+         ========================================================= -->
+    <main class="contact-page">
+
+        <div class="contact-main">
+
+            <!-- -------------------------------------------------
+                 INTRO
+                 ------------------------------------------------- -->
+            <section class="contact-intro">
+
+                <div class="contact-kicker">
+                    Dennis the Forge
+                </div>
+
+                <h1>
+                    Let's <span>talk.</span>
+                </h1>
+
+                <p>
+                    Questions, ideas, projects, strange problems,
+                    or simply curious about what we're building?
+                    Drop us a line. The Forge is listening.
+                </p>
+
+            </section>
+
+
+            <!-- -------------------------------------------------
+                 CONTENT
+                 ------------------------------------------------- -->
+            <section class="contact-grid">
+
+                <!-- =============================================
+                     FORM
+                     ============================================= -->
+                <div class="contact-card">
+
+                    <h2>Contact the Forge</h2>
+
+                    <p>
+                        Send a message and we'll get back to you.
+                        No ticket maze, no marketing funnel.
+                    </p>
+
+                    <form
+                        id="contactForm"
+                        class="contact-form"
+                        novalidate
+                    >
+
+                        <!-- Name / Email -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="contactName">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    name="name"
+                                    autocomplete="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="contactEmail">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="contactEmail"
+                                    name="email"
+                                    autocomplete="email"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <!-- Subject -->
+                        <div class="form-group">
+
+                            <label for="contactSubject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                name="subject"
+                                placeholder="What would you like to talk about?"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+
+                            <label for="contactMessage">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="contactMessage"
+                                name="message"
+                                placeholder="Tell us what's on your mind..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- CAPTCHA -->
+                        <div class="captcha-box">
+
+                            <div class="captcha-question">
+                                <span>
+                                    Quick check to keep the robots
+                                    outside the Forge:
+                                </span>
+
+                                <strong id="captchaQuestion">
+                                    Loading...
+                                </strong>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="captchaAnswer">
+                                    Answer
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="captchaAnswer"
+                                    name="captcha_answer"
+                                    inputmode="numeric"
+                                    autocomplete="off"
+                                    placeholder="?"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Actions -->
+                        <div class="contact-actions">
+
+                            <button
+                                type="submit"
+                                class="contact-submit"
+                                id="contactSubmit"
+                            >
+                                Send Message
+                            </button>
+
+                            <a
+                                class="whatsapp-button"
+                                href="https://wa.me/52951122073"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span class="whatsapp-icon">◉</span>
+                                WhatsApp the Forge
+                            </a>
+
+                        </div>
+
+
+                        <!-- Status -->
+                        <p
+                            id="formStatus"
+                            class="form-status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+
+                <!-- =============================================
+                     SIDE INFORMATION
+                     ============================================= -->
+                <aside class="contact-side">
+
+                    <div class="contact-side-card">
+
+                        <h3>
+                            Prefer email?
+                        </h3>
+
+                        <p>
+                            You can always reach the Forge directly.
+                            Messages sent here arrive in the same
+                            inbox we use for replies.
+                        </p>
+
+                        <a
+                            class="contact-email"
+                            href="mailto:hello@dennis-forge.com"
+                        >
+                            hello@dennis-forge.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-side-card">
+
+                        <h3>
+                            Or use WhatsApp
+                        </h3>
+
+                        <p>
+                            For something quick, WhatsApp works too.
+                            <strong>No bots. No ticket system.</strong>
+                            Just a conversation.
+                        </p>
+
+                        <a
+                            class="contact-email"
+                            href="https://wa.me/52951122073"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Chat on WhatsApp →
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-side-card">
+
+                        <h3>
+                            <span class="forge-mark">◆</span>
+                            The Forge
+                        </h3>
+
+                        <p>
+                            Dennis exists to preserve knowledge,
+                            make change deterministic, and keep the
+                            machinery understandable.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================================
+         CANONICAL FOOTER
+         ========================================================= -->
+    <dennis-footer></dennis-footer>
+
+
+    <!-- =========================================================
+         CANONICAL HEADER / FOOTER
+         ========================================================= -->
+    <script src="assets/js/components/header.js"></script>
+
+    <script>
+        const API_BASE = "/api";
+    </script>
+
+    <!-- =========================================================
+         CONTACT FORM
+         ========================================================= -->
+    <script>
+        (() => {
+
+            const form = document.getElementById("contactForm");
+            const question = document.getElementById("captchaQuestion");
+            const answer = document.getElementById("captchaAnswer");
+            const status = document.getElementById("formStatus");
+            const submit = document.getElementById("contactSubmit");
+
+            let captchaToken = null;
+
+
+            /*
+             * The backend should expose:
+             *
+             * GET /api/contact/captcha
+             *
+             * returning:
+             *
+             * {
+             *     "question": "What is 7 + 4?",
+             *     "token": "..."
+             * }
+             *
+             * If the current backend uses another endpoint,
+             * only this function needs to be adjusted.
+             */
+
+            async function loadCaptcha() {
+
+                try {
+
+                    const response = await fetch(
+                        `${API_BASE}/contact/captcha`
+                    );
+
+                    if (!response.ok) {
+                        throw new Error(
+                            "Unable to load CAPTCHA."
+                        );
+                    }
+
+                    const data = await response.json();
+
+                    question.textContent =
+                        data.question;
+
+                    captchaToken =
+                        data.token;
+
+                } catch (error) {
+
+                    /*
+                     * Fallback so the page remains usable if
+                     * the CAPTCHA endpoint is temporarily
+                     * unavailable.
+                     */
+
+                    const a =
+                        Math.floor(Math.random() * 8) + 2;
+
+                    const b =
+                        Math.floor(Math.random() * 8) + 2;
+
+                    question.textContent =
+                        `What is ${a} + ${b}?`;
+
+                    captchaToken =
+                        btoa(
+                            JSON.stringify({
+                                answer: a + b
+                            })
+                        );
+                }
+            }
+
+
+            function setStatus(message, type = "") {
+
+                status.textContent = message;
+
+                status.className =
+                    "form-status" +
+                    (type ? ` ${type}` : "");
+            }
+
+
+            form.addEventListener(
+                "submit",
+                async (event) => {
+
+                    event.preventDefault();
+
+                    setStatus("");
+
+                    if (!form.checkValidity()) {
+
+                        form.reportValidity();
+
+                        return;
+                    }
+
+                    submit.disabled = true;
+                    submit.textContent =
+                        "Sending…";
+
+
+                    const payload = {
+
+                        name:
+                            document
+                                .getElementById("contactName")
+                                .value
+                                .trim(),
+
+                        email:
+                            document
+                                .getElementById("contactEmail")
+                                .value
+                                .trim(),
+
+                        subject:
+                            document
+                                .getElementById("contactSubject")
+                                .value
+                                .trim(),
+
+                        message:
+                            document
+                                .getElementById("contactMessage")
+                                .value
+                                .trim(),
+
+                        captcha_answer:
+                            answer.value.trim(),
+
+                        captcha_token:
+                            captchaToken
+                    };
+
+
+                    try {
+
+                        const response =
+                            await fetch(`${API_BASE}/contact`, 
+                            {
+                                    method: "POST",
+
+                                    headers: {
+                                        "Content-Type":
+                                            "application/json"
+                                    },
+
+                                    body:
+                                        JSON.stringify(
+                                            payload
+                                        )
+                                }
+                            );
+
+
+                        let data = {};
+
+                        try {
+                            data =
+                                await response.json();
+                        } catch (_) {
+                            // Ignore non-JSON response.
+                        }
+
+
+                        if (!response.ok) {
+
+                            throw new Error(
+                                data.detail ||
+                                data.message ||
+                                "Unable to send your message."
+                            );
+                        }
+
+
+                        setStatus(
+                            data.message ||
+                            "Your message has been sent. We'll be in touch.",
+                            "success"
+                        );
+
+                        form.reset();
+
+                        await loadCaptcha();
+
+                    } catch (error) {
+
+                        setStatus(
+                            error.message ||
+                            "Something went wrong. Please try again.",
+                            "error"
+                        );
+
+                    } finally {
+
+                        submit.disabled = false;
+                        submit.textContent =
+                            "Send Message";
+                    }
+
+                }
+            );
+
+            loadCaptcha();
+
+        })();
+    </script>
+
+</body>
+</html>
