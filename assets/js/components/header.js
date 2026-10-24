@@ -7,7 +7,7 @@ class DennisHeader extends HTMLElement {
 
         <a href="index.html" class="logo">
             <img
-                src="assets/img/logo.png"
+                src="assets/img/logo.jpg"
                 alt="Dennis Forge"
                 class="sidebar-logo"
             >
