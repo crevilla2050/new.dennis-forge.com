@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <title>Dennis Forge — Deterministic Codemods, you can trust</title>
+    <title>Dennis Forge — Protocolo de seguridad de la información</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Dennis Forge is a deterministic codemod engine for Git projects. Create checkable, exportable and reversible transformation plans." />
-    <meta name="keywords" content="codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools" />
+    <meta name="description" content="Dennis es un protocolo de seguridad de la información de código abierto para gestionar información de forma controlada, determinista y verificable. La transformación de software es su aplicación más madura; los artefactos DEX portables permiten comprobar la integridad y reproducir flujos de trabajo." />
+    <meta name="keywords" content="transformaciones deterministas, refactorización de software, migración de código, extracción de documentos, HTML, DOCX, ODT, análisis forense digital, flujos jurídicos, educación, código abierto, artefactos DEX" />
     <meta name="author" content="Carlos Revilla" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0f1416" />
 
-    <meta property="og:title" content="Dennis Forge — Deterministic Codemods, you can trust" />
-    <meta property="og:description" content="Plan, check and undo code transformations. CLI-first, Open Source and deterministic." />
+    <meta property="og:title" content="Dennis Forge — Protocolo de seguridad de la información" />
+    <meta property="og:description" content="Controla y verifica operaciones sobre información mediante planes deterministas y artefactos DEX portables. La transformación de software es la aplicación más madura de Dennis; otros ámbitos requieren controles y validación adecuados." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dennis-forge.com/" />
+    <meta property="og:url" content="https://dennis-forge.com/index-es.html" />
     <meta property="og:image" content="https://dennis-forge.com/assets/img/dennis-forge-hero.png" />
     <meta property="og:site_name" content="Dennis Forge" />
     <meta name="google-site-verification" content="ADD_LATER" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dennis Forge — Deterministic Codemods" />
-    <meta name="twitter:description" content="Deterministic engine for Git transformations. No magic. No lock-in." />
+    <meta name="twitter:title" content="Dennis Forge — Protocolo de seguridad de la información" />
+    <meta name="twitter:description" content="Haz que las operaciones sobre información sean inspeccionables y verificables. Código abierto, determinista por diseño y basado en artefactos DEX portables." />
     <meta name="twitter:image" content="https://dennis-forge.com/assets/img/dennis-forge-hero.png" />
-    <link rel="canonical" href="https://dennis-forge.com/" />
+    <link rel="canonical" href="https://dennis-forge.com/index-es.html" />
 
     <link rel="alternate" hreflang="en" href="https://dennis-forge.com/" />
-    <link rel="alternate" hreflang="es" href="https://dennis-forge.com/index-es.html" />
+    <link rel="alternate" hreflang="es-MX" href="https://dennis-forge.com/index-es.html" />
     <link rel="alternate" hreflang="de" href="https://dennis-forge.com/index-de.html" />
     <link rel="alternate" hreflang="x-default" href="https://dennis-forge.com/" />
     <link rel="preload" as="image" href="assets/img/dennis-forge-hero.png">
+    <meta property="og:locale" content="es_MX" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css?v=20260629" />
     <script type="application/ld+json">
@@ -41,11 +42,11 @@
         "@type": "Person",
         "name": "Carlos Revilla"
         },
-        "description": "Deterministic transformation engine for Git-native projects.",
+        "description": "Protocolo de seguridad de la información de código abierto basado en procesamiento determinista, planes inspeccionables y artefactos DEX portables. La transformación de software es su aplicación más madura.",
         "url": "https://dennis-forge.com/",
         "license": "https://opensource.org/licenses/MIT",
         "codeRepository": "https://github.com/crevilla2050/string-audit",
-        "keywords": "codemods, deterministic refactoring, git transformations, developer tools, code migration, static analysis, CLI tools"
+        "keywords": "protocolo de seguridad de la información, integridad de la información, procesamiento determinista, artefactos DEX, transformación de software, análisis forense digital, flujos jurídicos y notariales, reproducibilidad"
     }
     </script>
     <script src="assets/js/forge.js"></script>
@@ -57,1326 +58,1111 @@
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<dennis-header></dennis-header>
+    <!-- ================= HEADER ================= -->
+    <dennis-header></dennis-header>
 
-  <!-- ===== CONTENT ===== -->
-  <main id="main-content">
-    <!-- ================= HERO ================= -->
-    <section class="hero">
+    <!-- ===== CONTENT ===== -->
+    <main id="main-content">
+        <!-- ================= BETA ANNOUNCEMENT ================= -->
+        <section class="beta-banner" aria-label="Anuncio de la versión beta de Dennis Forge">
 
-        <div class="hero-text">
+            <div class="beta-banner-content">
 
-            <h1>
-                Transforma software con
-                <span>confianza.</span>
-            </h1>
+                <div class="beta-banner-text">
 
-            <img
-                src="assets/img/logo.png"
-                class="sidebar-logo"
-                alt="Dennis Forge">
+                    <h2>
+                        🔨 Forge sigue en <span>fase beta</span>
+                    </h2>
 
-            <p>
-                Dennis Forge convierte las transformaciones de software
-                en artefactos deterministas e inspeccionables.
-            </p>
+                    <p>
+                        Dennis Forge ya está disponible para todos. Seguimos construyendo, probando y perfeccionando.
+                        <strong>Puede haber sorpresas, cambios y algún que otro incendio ocasional.</strong>
+                        Esta es una versión inicial: ponla a prueba, encuentra sus límites y cuéntanos qué descubres.
+                    </p>
 
-            <p>
-                Planifica los cambios antes de ejecutarlos. Revísalos.
-                Verifícalos. Aplícalos cuando estés listo.
-            </p>
+                </div>
 
-            <div class="hero-tags">
-                <span>CLI primero</span>
-                <span>Código abierto</span>
-                <span>Determinista</span>
-                <span>Sin dependencia del proveedor</span>
-            </div>
-
-            <div class="cta">
-
-                <a
-                    href="get-started-es.html"
-                    class="btn primary">
-                    Comenzar
-                </a>
-
-                <a
-                    href="#pricing-preview"
-                    class="btn secondary">
-                    Ver precios
-                </a>
+                <img
+                    src="assets/img/beta.png"
+                    alt="Versión beta"
+                    class="beta-banner-image">
 
             </div>
 
-        </div>
+        </section>
 
-        <div class="hero-visual">
-            <img
-                src="assets/img/dennis-forge-hero.png"
-                alt="Dennis Forge">
-        </div>
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Comprende lo que existe. Controla lo que cambia.</h1>
 
-    </section>
-    
-    <!-- ================= LA IDEA ================= -->
-    <section id="pillars" class="section">
+                <img
+                    src="assets/img/logo.png"
+                    class="sidebar-logo"
+                    alt="Dennis Forge">
 
-        <div class="container">
-            <h2>Primero los planes. Después los cambios.</h2>
+                <p>Primero, establece qué existe. Después, decide qué debe cambiar. Inspecciona el plan, verifica el resultado y, cuando sea compatible, conserva un artefacto DEX portable, sin depender de un servicio central como fuente de verdad.</p>
 
-            <p class="section-subtitle">
-                Las transformaciones de software nunca deberían ser un salto
-                de fe. Dennis separa la decisión de la ejecución para que puedas
-                entender un cambio antes de comprometerte con él.
-            </p>
+                <p>Comprende qué operación se propone, inspecciónala antes de ejecutarla, verifica la integridad del artefacto y conserva un registro portable del proceso, sin depender de un servicio central como fuente de verdad.</p>
 
-            <div class="cards">
-
-                <div class="card">
-
-                    <i class="bi bi-file-earmark-text pillar-icon"></i>
-
-                    <h3>Planifica antes de cambiar</h3>
-
-                    <p>
-                        Dennis genera un plan de transformación determinista
-                        antes de modificar tu proyecto. El plan describe lo que
-                        ocurrirá antes de que ocurra.
-                    </p>
-
+                <div class="hero-tags">
+                    <span>Primero la CLI</span>
+                    <span>Código abierto</span>
+                    <span>Determinista</span>
+                    <span>Sin dependencia de un proveedor</span>
                 </div>
 
-                <div class="card">
-
-                    <i class="bi bi-eye pillar-icon"></i>
-
-                    <h3>Ve lo que va a ocurrir</h3>
-
-                    <p>
-                        Inspecciona la transformación antes de ejecutarla.
-                        Nada ocurre a tus espaldas y el propio plan se convierte
-                        en la fuente de verdad.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-check2-circle pillar-icon"></i>
-
-                    <h3>Verifica antes de aplicar</h3>
-
-                    <p>
-                        Valida el plan, verifica su integridad y aplícalo
-                        únicamente cuando estés satisfecho con el resultado.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= TRES PRINCIPIOS ================= -->
-    <section id="features" class="section">
-        <div class="container">
-            <h2>Construido sobre tres principios</h2>
-
-            <p class="section-subtitle">
-                Dennis parte de una idea sencilla:
-                las transformaciones de software deben ser predecibles,
-                comprensibles y seguir siendo tuyas.
-            </p>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <i class="bi bi-gear-wide-connected pillar-icon"></i>
-
-                    <h3>Determinista</h3>
-
-                    <p>
-                        La misma entrada produce la misma salida.
-                        La reproducibilidad forma parte del núcleo de Dennis,
-                        no es algo añadido después.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-search pillar-icon"></i>
-
-                    <h3>Inspeccionable</h3>
-
-                    <p>
-                        Nada ocurre a tus espaldas.
-                        Los planes pueden revisarse, verificarse y comprenderse
-                        antes de ser aplicados.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-box-seam pillar-icon"></i>
-
-                    <h3>Portable</h3>
-
-                    <p>
-                        Las transformaciones se convierten en artefactos.
-                        Guárdalos, versionalos, compártelos y utilízalos donde
-                        los necesites, sin depender de un servicio central.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= CÓMO FUNCIONA DENNIS ================= -->
-    <section id="workflow" class="section">
-
-        <div class="container">
-
-            <h2>De la transformación al artefacto</h2>
-
-            <p class="section-subtitle">
-                Dennis convierte un cambio de software en un proceso explícito
-                y verificable. Tú decides qué ocurre en cada paso.
-            </p>
-
-            <div class="flow-steps">
-
-                <div class="flow-step">
-
-                    <i class="bi bi-search"></i>
-
-                    <h3>1. Analiza</h3>
-
-                    <p>
-                        Examina tu proyecto e identifica el contenido
-                        relevante para la transformación.
-                    </p>
-
-                </div>
-
-                <div class="flow-arrow">
-                    <i class="bi bi-arrow-right"></i>
-                </div>
-
-                <div class="flow-step">
-
-                    <i class="bi bi-pencil-square"></i>
-
-                    <h3>2. Planifica</h3>
-
-                    <p>
-                        Genera un plan determinista que describe exactamente
-                        lo que Dennis pretende cambiar.
-                    </p>
-
-                </div>
-
-                <div class="flow-arrow">
-                    <i class="bi bi-arrow-right"></i>
-                </div>
-
-                <div class="flow-step">
-
-                    <i class="bi bi-eye"></i>
-
-                    <h3>3. Inspecciona</h3>
-
-                    <p>
-                        Revisa el plan antes de ejecutarlo.
-                        Comprende la transformación antes de que ocurra.
-                    </p>
-
-                </div>
-
-                <div class="flow-arrow">
-                    <i class="bi bi-arrow-right"></i>
-                </div>
-
-                <div class="flow-step">
-
-                    <i class="bi bi-shield-check"></i>
-
-                    <h3>4. Verifica</h3>
-
-                    <p>
-                        Valida el plan y verifica su integridad antes
-                        de aplicar la transformación.
-                    </p>
-
-                </div>
-
-                <div class="flow-arrow">
-                    <i class="bi bi-arrow-right"></i>
-                </div>
-
-                <div class="flow-step">
-
-                    <i class="bi bi-lightning-charge"></i>
-
-                    <h3>5. Aplica</h3>
-
-                    <p>
-                        Ejecuta la transformación cuando estés satisfecho
-                        con el resultado.
-                    </p>
-
-                </div>
-
-                <div class="flow-arrow">
-                    <i class="bi bi-arrow-right"></i>
-                </div>
-
-                <div class="flow-step">
-
-                    <i class="bi bi-box-seam"></i>
-
-                    <h3>6. Empaqueta</h3>
-
-                    <p>
-                        Preserva la transformación como un artefacto DEX
-                        portable que puedes almacenar y compartir.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="announcement">
-
-                <strong>Lo importante:</strong>
-                Dennis no te pide que confíes en un script invisible.
-                La transformación se convierte en algo que puedes inspeccionar,
-                verificar, preservar y reproducir.
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= ARTEFACTOS DEX ================= -->
-    <section id="dex-artifacts" class="section">
-
-        <div class="container">
-            <h2>Convierte las transformaciones en artefactos</h2>
-            <p class="section-subtitle">
-                Una transformación no debería desaparecer en el momento en que
-                se ejecuta. Dennis la captura como un artefacto DEX portable que
-                puede inspeccionarse, verificarse, compartirse, almacenarse y
-                preservarse.
-            </p>
-
-            <div class="cards">
-                <div class="card">
-                    <i class="bi bi-box-seam feature-icon"></i>
-                    <h3>Portable</h3>
-                    <p>
-                        Los artefactos DEX son archivos. Guárdalos localmente,
-                        consérvalos en Git, compártelos con un equipo o publícalos
-                        mediante un registro de artefactos.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-file-earmark-code feature-icon"></i>
-                    <h3>Inspeccionable</h3>
-                    <p>
-                        Un DEX contiene un plan de transformación legible
-                        junto con sus metadatos. Puedes inspeccionar lo que
-                        representa sin depender de un servicio alojado.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-fingerprint feature-icon"></i>
-                    <h3>Verificable</h3>
-                    <p>
-                        Su contenido determinista puede generar hashes y ser
-                        verificado. Las firmas criptográficas opcionales pueden
-                        aportar evidencia adicional de procedencia e integridad.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-arrow-repeat feature-icon"></i>
-                    <h3>Reproducible</h3>
-                    <p>
-                        Como el artefacto representa una transformación
-                        determinista, puede preservarse y reproducirse
-                        independientemente de la máquina que lo creó.
-                    </p>
-
-                </div>
-            </div>
-            <div class="announcement">
-                <strong>DEX significa Deterministic EXchange artifact.</strong>
-                Está diseñado para seguir siendo útil después de crear una
-                transformación: como algo que puedes conservar, verificar
-                y utilizar nuevamente.
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= LA FORJADURÍA ================= -->
-    <section id="the-forge" class="section">
-
-        <div class="container">
-
-            <h2>Bienvenido a la Forjaduría</h2>
-
-            <p class="section-subtitle">
-                El CLI de Dennis te proporciona el motor.
-                La Forjaduría les da a tus artefactos un lugar donde vivir,
-                crecer y convertirse en parte de un flujo de trabajo más amplio.
-            </p>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <i class="bi bi-cloud-arrow-up feature-icon"></i>
-
-                    <h3>Almacena tus artefactos</h3>
-
-                    <p>
-                        Sube tus artefactos DEX y mantenlos organizados en un
-                        entorno estructurado, en lugar de tenerlos dispersos
-                        entre máquinas, carpetas y mensajes.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-diagram-3 feature-icon"></i>
-
-                    <h3>Organiza tu trabajo</h3>
-
-                    <p>
-                        Utiliza Workspaces y Projects para dar un hogar
-                        significativo a tus artefactos relacionados y mantener
-                        organizado tu trabajo de transformación a medida que crece.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-people feature-icon"></i>
-
-                    <h3>Colabora</h3>
-
-                    <p>
-                        Comparte artefactos con las personas que los necesitan.
-                        La visibilidad privada, organizacional y pública te permite
-                        controlar quién puede ver tu trabajo.
-                    </p>
-
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-search feature-icon"></i>
-                    <h3>Descubre e inspecciona</h3>
-                    <p>
-                        Busca e inspecciona artefactos mediante la Forjaduría,
-                        manteniendo los archivos DEX portables e independientes.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-shield-check feature-icon"></i>
-                    <h3>Preserva la confianza</h3>
-                    <p>
-                        Los artefactos permanecen inmutables. La Forjaduría
-                        organiza sus metadatos y proporciona la infraestructura
-                        que los rodea sin modificarlos.
-                    </p>
-                </div>
-                <div class="card">
-                    <i class="bi bi-box-arrow-up-right feature-icon"></i>
-                    <h3>Sin quedar atrapado</h3>
-                    <p>
-                        Tus artefactos siguen siendo tuyos. Puedes exportarlos,
-                        preservarlos localmente y continuar utilizándolos con
-                        el CLI de Dennis sin depender de la plataforma alojada.
-                    </p>
-                </div>
-            </div>
-
-            <div class="announcement">
-                <strong>El CLI seguirá siendo gratuito para siempre.</strong>
-                La Forjaduría añade almacenamiento, organización, colaboración,
-                descubrimiento y otras capacidades alojadas, no restricciones
-                artificiales sobre la tecnología central.
-            </div>
-
-            <div class="cta"
-                style="justify-content:center; margin-top:30px;">
-
-                <a
-                    href="https://repo.dennis-forge.com/register"
-                    class="btn primary"
-                    target="_blank"
-                    >
-                    Crear mi cuenta en la Forjaduría
-                </a>
-
-                <a
-                    href="https://dennis-forge.com/get-started-es.html"
-                    class="btn secondary"
-                    target="_blank"
-                    >
-                    Explorar cómo comenzar
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ================= CASOS DE USO ================= -->
-    <section id="use-cases" class="section">
-
-        <div class="container">
-            <h2>Creado para cambios que importan</h2>
-            <p class="section-subtitle">
-                Ya sea que estés modificando cientos de archivos o preservando
-                una transformación para su revisión futura, Dennis te proporciona
-                un flujo de trabajo basado en el control, la reproducibilidad
-                y la trazabilidad.
-            </p>
-
-            <div class="cards">
-                <div class="card">
-                    <i class="bi bi-arrow-repeat feature-icon"></i>
-                    <h3>Grandes refactorizaciones</h3>
-                    <p>
-                        Planifica cambios estructurados en grandes bases de código
-                        antes de modificar los archivos. Revisa la transformación
-                        y aplícala únicamente cuando estés listo.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-signpost-split feature-icon"></i>
-                    <h3>Migraciones de sistemas</h3>
-                    <p>
-                        Convierte las migraciones en transformaciones explícitas
-                        y reproducibles que pueden revisarse, verificarse
-                        y preservarse.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-shield-lock feature-icon"></i>
-                    <h3>Cambios de seguridad</h3>
-                    <p>
-                        Haz que los cambios sensibles sean trazables. Los planes
-                        deterministas, la verificación y las firmas opcionales
-                        proporcionan un registro más sólido de qué cambió y por qué.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-clipboard2-check feature-icon"></i>
-                    <h3>Flujos de trabajo auditables</h3>
-                    <p>
-                        Cuando los cambios deben revisarse antes de ejecutarse,
-                        el plan proporciona un registro legible de la transformación
-                        prevista.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-git feature-icon"></i>
-                    <h3>Proyectos basados en Git</h3>
-                    <p>
-                        Utiliza Dennis junto con Git para transformar proyectos
-                        versionados, manteniendo la transformación explícita
-                        y verificable de forma independiente.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <i class="bi bi-diagram-3 feature-icon"></i>
-                    <h3>Transformaciones en equipo</h3>
-                    <p>
-                        Comparte artefactos DEX entre desarrolladores y equipos
-                        para que una transformación pueda comprenderse y
-                        reproducirse más allá de la máquina donde fue creada.
-                    </p>
-                </div>
-
-            </div>
-            <div class="announcement">
-                <strong>No te limites a cambiar el código.</strong>
-                Preserva la transformación que lo cambió.
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= PRECIOS ================= -->
-    <section id="pricing-preview" class="section">
-
-        <div class="container">
-
-            <h2>Elige la Forjaduría que necesitas</h2>
-
-            <p class="section-subtitle">
-                Comienza con la Forjaduría gratuita y crece cuando tu trabajo
-                lo requiera. Los planes de pago añaden almacenamiento, privacidad,
-                colaboración y capacidades de organización, no restricciones
-                artificiales sobre Dennis.
-            </p>
-
-            <div class="cards pricing-cards">
-
-                <!-- FREE -->
-                <div class="card pricing-card">
-
-                    <i class="bi bi-box pricing-icon"></i>
-
-                    <h3>Gratis</h3>
-
-                    <div class="price">
-                        $0
-                        <span>para siempre</span>
-                    </div>
-
-                    <p>
-                        Comienza a explorar la Forjaduría y trabaja con
-                        artefactos públicos.
-                    </p>
-
-                    <ul>
-                        <li>100 MB de almacenamiento</li>
-                        <li>Artefactos públicos</li>
-                        <li>Soporte comunitario</li>
-                        <li>CLI para siempre</li>
-                    </ul>
+                <div class="cta">
 
                     <a
-                        href="https://repo.dennis-forge.com/register/"
-                        class="btn secondary"
-                        target="_blank"
-                        >
+                        href="get-started-es.html"
+                        class="btn primary">
                         Comenzar
                     </a>
 
-                </div>
-
-
-                <!-- BASIC -->
-                <div class="card pricing-card">
-
-                    <i class="bi bi-lightning-charge pricing-icon"></i>
-
-                    <h3>Basic</h3>
-
-                    <div class="price">
-                        $6.99 USD
-                        <span>/mes</span>
-                    </div>
-
-                    <p>
-                        Para desarrolladores individuales que necesitan
-                        almacenamiento privado de artefactos y firmas.
-                    </p>
-
-                    <ul>
-                        <li>1 GB de almacenamiento</li>
-                        <li>Artefactos privados</li>
-                        <li>Firma de artefactos</li>
-                        <li>Soporte por correo electrónico</li>
-                    </ul>
-
                     <a
-                        href="https://repo.dennis-forge.com/register/"
-                        class="btn secondary"
-                        target="_blank"
-                        >
-                        Elegir Basic
-                    </a>
-
-                </div>
-
-
-                <!-- PRO -->
-                <div class="card pricing-card featured">
-
-                    <div class="badge">
-                        MÁS POPULAR
-                    </div>
-
-                    <i class="bi bi-stars pricing-icon"></i>
-
-                    <h3>Pro</h3>
-
-                    <div class="price">
-                        $10.99 USD
-                        <span>/mes</span>
-                    </div>
-
-                    <p>
-                        Para desarrolladores y profesionales que gestionan
-                        colecciones más grandes de artefactos.
-                    </p>
-
-                    <ul>
-                        <li>Todo lo incluido en Basic</li>
-                        <li>10 GB de almacenamiento</li>
-                        <li>Organizaciones</li>
-                        <li>Permisos avanzados</li>
-                        <li>Almacenamiento adicional</li>
-                    </ul>
-
-                    <a
-                        href="https://repo.dennis-forge.com/register/"
-                        class="btn primary"
-                        target="_blank"
-                        >
-                        Elegir Pro
-                    </a>
-
-                </div>
-
-
-                <!-- TEAM -->
-                <div class="card pricing-card">
-
-                    <i class="bi bi-people pricing-icon"></i>
-
-                    <h3>Team</h3>
-
-                    <div class="price">
-                        $14.99 USD
-                        <span>/usuario/mes</span>
-                    </div>
-
-                    <p>
-                        Para equipos que necesitan espacios de trabajo
-                        compartidos, colaboración y capacidad para crecer.
-                    </p>
-
-                    <ul>
-                        <li>Todo lo incluido en Pro</li>
-                        <li>5 GB de almacenamiento por usuario</li>
-                        <li>30 GB de almacenamiento compartido</li>
-                        <li>Espacios de trabajo para equipos</li>
-                        <li>Colaboración</li>
-                        <li>Soporte prioritario</li>
-                    </ul>
-
-                    <a
-                        href="https://repo.dennis-forge.com/register/"
-                        class="btn secondary"
-                        target="_blank"
-                        >
-                        Elegir Team
-                    </a>
-
-                </div>
-
-
-                <!-- ENTERPRISE -->
-                <div class="card pricing-card enterprise">
-
-                    <i class="bi bi-building pricing-icon"></i>
-
-                    <h3>Enterprise</h3>
-
-                    <div class="price">
-                        Custom
-                        <span>contáctanos</span>
-                    </div>
-
-                    <p>
-                        Para organizaciones que requieren infraestructura
-                        dedicada, soporte especializado o acuerdos personalizados.
-                    </p>
-
-                    <ul>
-                        <li>Organizaciones ilimitadas</li>
-                        <li>Soporte dedicado</li>
-                        <li>Incorporación personalizada</li>
-                        <li>Opciones de alojamiento propio</li>
-                        <li>Acuerdos empresariales</li>
-                    </ul>
-
-                    <a
-                        href="contact-es.html"
+                        href="#pricing-preview"
                         class="btn secondary">
-                        Contáctanos
+                        Ver precios
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img
+                    src="assets/img/dennis-forge-hero.png"
+                    alt="Dennis Forge">
+            </div>
+
+        </section>
+        <dennis-release-news locale="es"></dennis-release-news>
+        <!-- ================= THE IDEA ================= -->
+        <section id="pillars" class="section">
+            <div class="container">
+                <h2>La seguridad comienza con un plan.</h2>
+                <p class="section-subtitle">La información no debería modificarse a ciegas. Dennis separa la operación prevista de su ejecución, para que los cambios compatibles puedan inspeccionarse y validarse antes de aplicarlos. Cada ámbito requiere además controles, pruebas y procedimientos operativos adecuados.</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <i class="bi bi-file-earmark-text pillar-icon"></i>
+                        <h3>Planifica antes de cambiar</h3>
+                        <p>
+                            Dennis genera un plan de transformación determinista antes de modificar tu proyecto. El plan describe lo que sucederá antes de que ocurra cualquier cambio.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-eye pillar-icon"></i>
+                        <h3>Comprende qué va a suceder</h3>
+                        <p>
+                            Inspecciona la transformación antes de ejecutarla. Nada ocurre a tus espaldas: el propio plan se convierte en la fuente de verdad.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-check2-circle pillar-icon"></i>
+                        <h3>Verifica antes de aplicar</h3>
+                        <p>
+                            Valida el plan, comprueba su integridad y aplícalo solo cuando estés conforme con el resultado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ================= THREE PRINCIPLES ================= -->
+        <section id="features" class="section">
+
+            <div class="container">
+
+                <h2>Un modelo basado en la integridad de la información</h2>
+
+                <p class="section-subtitle">Dennis parte de una idea sencilla: las operaciones sobre información deben ser predecibles, inspeccionables y verificables de forma independiente cuando el flujo de trabajo y su implementación ofrezcan esas garantías.</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <i class="bi bi-gear-wide-connected pillar-icon"></i>
+                        <h3>Determinista</h3>
+                        <p>
+                            La misma entrada produce la misma salida. La reproducibilidad forma parte del núcleo de Dennis; no es un añadido de última hora.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <i class="bi bi-search pillar-icon"></i>
+                        <h3>Inspeccionable</h3>
+                        <p>
+                            Nada ocurre a tus espaldas. Puedes revisar, verificar y comprender los planes antes de aplicarlos.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <i class="bi bi-box-seam pillar-icon"></i>
+                        <h3>Portable</h3>
+                        <p>
+                            Las transformaciones se convierten en artefactos. Guárdalos, versiona sus archivos, compártelos y utilízalos donde los necesites, sin depender de un servicio central.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= DOS PILARES ================= -->
+        <section id="two-pillars" class="section">
+            <div class="container">
+                <h2>Dos motores complementarios. Un solo protocolo.</h2>
+                <p class="section-subtitle">Dennis combina el descubrimiento del estado con la transformación controlada de información. Pueden trabajar juntos, pero cada capacidad también es útil por sí misma: a veces el objetivo es comprender y documentar lo que existe; otras, transformar información proporcionada mediante un proceso revisable.</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <i class="bi bi-search feature-icon"></i>
+                        <h3>1. Descubrimiento y reconstrucción del estado</h3>
+                        <p>Analiza un objetivo compatible y crea una descripción estructurada de su estado actual. Usa esa base para inspeccionar contenido, comparar estados, identificar diferencias y comprender qué hay antes de decidir el siguiente paso.</p>
+                        <p><strong>Capacidad central:</strong> Inventario · Captura de estado · Análisis estructural · Comparación</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="bi bi-shuffle feature-icon"></i>
+                        <h3>2. Transformación controlada de información</h3>
+                        <p>Define la operación prevista, genera un plan inspeccionable, valídalo y aplica los cambios compatibles de forma deliberada. Cuando sea compatible, conserva la operación y su resultado en un artefacto DEX portable para revisarlos y verificarlos posteriormente.</p>
+                        <p><strong>Capacidad central:</strong> Planificación · Transformación · Validación · Artefactos DEX · Reproducibilidad</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HOW DENNIS WORKS ================= -->
+        <section id="workflow" class="section">
+            <div class="container">
+                <h2>Del descubrimiento a la transformación controlada</h2>
+                <p class="section-subtitle">Un flujo habitual consiste en inspeccionar un objetivo, comprender su estado, planificar un cambio compatible, revisar y verificar el plan, aplicarlo y conservar el resultado. El descubrimiento no tiene que terminar en una transformación; las transformaciones compatibles también pueden partir de datos proporcionados.</p>
+
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <i class="bi bi-search"></i>
+                        <h3>1. Analiza</h3>
+                        <p>Examina el material de origen e identifica el contenido relevante para una operación compatible.</p>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+
+                    <div class="flow-step">
+                        <i class="bi bi-pencil-square"></i>
+                        <h3>2. Planifica</h3>
+                        <p>Genera un plan determinista que describa la operación prevista y los cambios que contempla.</p>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+
+                    <div class="flow-step">
+                        <i class="bi bi-eye"></i>
+                        <h3>3. Inspecciona</h3>
+                        <p>Revisa el plan antes de ejecutarlo. Comprende la operación prevista antes de que ocurra.</p>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+
+                    <div class="flow-step">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>4. Verifica</h3>
+                        <p>Valida el plan y comprueba su integridad antes de aplicar la operación.</p>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+
+                    <div class="flow-step">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>5. Aplica</h3>
+                        <p>Ejecuta la operación solo después de revisar y aceptar el plan.</p>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+
+                    <div class="flow-step">
+                        <i class="bi bi-box-seam"></i>
+                        <h3>6. Empaqueta</h3>
+                        <p>Conserva la operación como un artefacto DEX portable que puedas almacenar, compartir y revisar posteriormente.</p>
+                    </div>
+                </div>
+
+                <div class="announcement">
+                    <strong>Lo importante:</strong>
+                    Dennis no te pide que confíes en un script invisible. La transformación se convierte en algo que puedes inspeccionar, verificar, conservar y reproducir.
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DEX ARTIFACTS ================= -->
+        <section id="dex-artifacts" class="section">
+
+            <div class="container">
+
+                <h2>Conserva el proceso en un artefacto DEX</h2>
+
+                <p class="section-subtitle">Una operación importante sobre información debería dejar algo más que un resultado difícil de explicar. Los artefactos DEX conservan una representación portable e inspeccionable de una transformación determinista, incluidos su plan y sus metadatos, para que pueda revisarse, verificarse, compartirse y conservarse.</p>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <i class="bi bi-box-seam feature-icon"></i>
+
+                        <h3>Portable</h3>
+
+                        <p>
+                            Los artefactos DEX son archivos. Guárdalos localmente, consérvalos en Git, compártelos con tu equipo o publícalos en un registro de artefactos.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-file-earmark-code feature-icon"></i>
+
+                        <h3>Inspeccionable</h3>
+
+                        <p>
+                            Un DEX contiene un plan de transformación legible para las personas, junto con sus metadatos. Puedes inspeccionar qué representa el artefacto sin depender de un servicio alojado.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-fingerprint feature-icon"></i>
+
+                        <h3>Verificable</h3>
+
+                        <p>
+                            El contenido determinista puede resumirse mediante hashes y verificarse. Las firmas criptográficas opcionales pueden aportar evidencia adicional de procedencia e integridad.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-arrow-repeat feature-icon"></i>
+
+                        <h3>Reproducible</h3>
+
+                        <p>
+                            Como el artefacto representa una transformación determinista, puede conservarse y reproducirse independientemente de la máquina en la que se creó.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="announcement">
+
+                    <strong>DEX significa “Deterministic EXchange artifact” (artefacto de intercambio determinista).</strong>
+                    Está diseñado para seguir siendo útil después de crear una transformación: algo que puedes conservar, verificar y volver a utilizar.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= THE FORGE ================= -->
+        <section id="the-forge" class="section">
+
+            <div class="container">
+
+                <h2>Te damos la bienvenida a Forge</h2>
+
+                <p class="section-subtitle">La CLI de Dennis proporciona el motor de procesamiento. Forge ofrece un lugar para almacenar, organizar, descubrir y compartir artefactos DEX como parte de un flujo más amplio de integridad de la información.</p>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <i class="bi bi-cloud-arrow-up feature-icon"></i>
+
+                        <h3>Almacena tus artefactos</h3>
+
+                        <p>
+                            Sube artefactos DEX y mantenlos organizados en un entorno estructurado, en lugar de tenerlos dispersos entre equipos, carpetas y mensajes de chat.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-diagram-3 feature-icon"></i>
+
+                        <h3>Organiza tu trabajo</h3>
+
+                        <p>
+                            Utiliza Workspaces y Projects para agrupar los artefactos relacionados y mantener organizado el trabajo de transformación a medida que crece.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-people feature-icon"></i>
+
+                        <h3>Colabora</h3>
+
+                        <p>
+                            Comparte artefactos con quienes los necesitan. Los niveles de visibilidad privada, organizacional y pública te permiten controlar quién puede ver tu trabajo.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-search feature-icon"></i>
+
+                        <h3>Busca e inspecciona</h3>
+
+                        <p>
+                            Busca e inspecciona artefactos en la plataforma Forge alojada, mientras mantienes los archivos DEX subyacentes portables e independientes.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-shield-check feature-icon"></i>
+
+                        <h3>Preserva la confianza</h3>
+
+                        <p>
+                            Los artefactos permanecen inmutables. Forge indexa sus metadatos y proporciona la infraestructura necesaria sin modificar los artefactos.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-box-arrow-up-right feature-icon"></i>
+
+                        <h3>Sin quedar atado a la plataforma</h3>
+
+                        <p>
+                            Los artefactos siguen siendo tuyos. Expórtalos, consérvalos localmente y continúa utilizándolos con la CLI de Dennis sin depender de la plataforma alojada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="announcement">
+
+                    <strong>La CLI seguirá siendo gratuita para siempre.</strong>
+                    Forge añade almacenamiento, organización, colaboración, búsqueda y otras capacidades alojadas; no impone restricciones artificiales a la tecnología central.
+
+                </div>
+
+                <div class="cta" style="justify-content:center; margin-top:30px;">
+
+                    <a
+                        href="https://repo.dennis-forge.com/register"
+                        class="btn primary">
+                        Crea tu cuenta de Forge
+                    </a>
+
+                    <a
+                        href="get-started-es.html"
+                        class="btn secondary">
+                        Consulta la guía de inicio
                     </a>
 
                 </div>
 
             </div>
 
+        </section>
 
-            <div class="announcement">
+        <!-- ================= USE CASES ================= -->
+        <section id="use-cases" class="section">
+            <div class="container">
+                <h2>Un modelo de integridad. Muchas aplicaciones.</h2>
+                <p class="section-subtitle">Dennis es un protocolo de seguridad de la información basado en planes de procesamiento deterministas, cambios inspeccionables y artefactos portables cuya integridad puede verificarse. La transformación de software es su aplicación más madura en la actualidad. La extracción de documentos estructurados es experimental; los flujos jurídicos/notariales y forenses siguen en fase exploratoria y requieren controles, validación e integraciones específicas de cada ámbito.</p>
 
-                <strong>Comienza gratis. Mantén tu independencia.</strong>
-                El CLI de Dennis y su núcleo determinista siguen siendo
-                gratuitos y de código abierto. La Forjaduría proporciona
-                la infraestructura alojada que los rodea.
-
-            </div>
-
-
-            <div class="cta"
-                style="justify-content:center; margin-top:30px;">
-
-                <a
-                    href="pricing-es.html"
-                    class="btn secondary">
-                    Ver todos los precios
-                </a>
-
-                <a
-                    href="founders-es.html"
-                    class="btn primary">
-                    Hazte Fundador
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- ================= TODOS LOS PLANES ================= -->
-    <section id="all-plans" class="section">
-
-        <div class="container">
-
-            <h2>Todos los planes de la Forjaduría incluyen el núcleo</h2>
-
-            <p class="section-subtitle">
-                La Forjaduría crece contigo sin cambiar lo que Dennis es
-                fundamentalmente. Tus artefactos siguen siendo portables,
-                inspeccionables y tuyos.
-            </p>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <i class="bi bi-box-seam feature-icon"></i>
-
-                    <h3>Artefactos DEX</h3>
-
-                    <p>
-                        Trabaja con artefactos deterministas diseñados para
-                        ser inspeccionados, verificados, preservados y compartidos.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-folder2-open feature-icon"></i>
-
-                    <h3>Projects y Workspaces</h3>
-
-                    <p>
-                        Organiza los artefactos relacionados en Projects y
-                        Workspaces con significado a medida que tu trabajo crece.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-shield-check feature-icon"></i>
-
-                    <h3>Control e integridad</h3>
-
-                    <p>
-                        Mantén el control sobre la visibilidad de tus artefactos
-                        y trabaja con una infraestructura diseñada en torno a
-                        la integridad y un comportamiento predecible.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="bi bi-download feature-icon"></i>
-
-                    <h3>Conserva tus artefactos</h3>
-
-                    <p>
-                        Tus artefactos DEX no quedan atrapados en la Forjaduría.
-                        Puedes exportarlos y continuar trabajando con ellos
-                        mediante el CLI de Dennis cuando quieras.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="announcement">
-
-                <strong>Ningún plan cambia la promesa fundamental.</strong>
-                La Forjaduría proporciona la infraestructura alrededor de Dennis;
-                no se apropia de tu trabajo.
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= LOS LIBROS ================= -->
-    <section id="books" class="section">
-
-        <div class="container">
-
-            <h2>La Biblioteca de Dennis Forge</h2>
-
-            <p class="section-subtitle">
-                Dennis Forge no trata solamente de software.
-                Los artefactos DEX y las historias construidas alrededor de ellos
-                forman parte del mismo universo: conocimiento preservado de una
-                forma que puede compartirse, inspeccionarse y recordarse.
-            </p>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <div style="text-align:center; margin-bottom:25px;">
-                        <img
-                            src="assets/img/dextiny-cover.png"
-                            alt="DEXtiny — Una novela de DEXterity"
-                            style="width:min(100%, 260px); border-radius:4px 8px 8px 4px; box-shadow:0 18px 40px rgba(0,0,0,.45);">
+                <div class="cards">
+                    <div class="card">
+                        <i class="bi bi-code-slash feature-icon"></i>
+                        <h3>Desarrollo de software</h3>
+                        <p>
+                            Planifica y revisa refactorizaciones, migraciones e internacionalización del código antes de aplicar cambios. Conserva la transformación como un artefacto portable que tus compañeros puedan inspeccionar y verificar.
+                        </p>
+                        <p><strong>Área consolidada:</strong> flujos de transformación de software.</p>
                     </div>
 
-                    <i class="bi bi-book feature-icon"></i>
+                    <div class="card">
+                        <i class="bi bi-file-earmark-text feature-icon"></i>
+                        <h3>Documentos estructurados</h3>
+                        <p>
+                            Los extractores experimentales recopilan cadenas de texto compatibles de HTML, Microsoft Word DOCX y LibreOffice ODT y las convierten en JSON estructurado con contexto de origen. La extracción es de solo lectura; todavía no ofrece una reconstrucción completa de los documentos originales.
+                        </p>
+                        <p><strong>Experimental:</strong> herramientas de extracción de documentos.</p>
+                    </div>
 
-                    <h3>DEXtiny</h3>
+                    <div class="card">
+                        <i class="bi bi-journal-check feature-icon"></i>
+                        <h3>Despachos jurídicos y notarías</h3>
+                        <p>
+                            Una posible base para flujos controlados de procesamiento documental en los que los cambios deban revisarse y conservarse. Las plantillas especializadas, las reglas de cumplimiento y las integraciones jurídicas requieren desarrollo adicional.
+                        </p>
+                        <p><strong>En exploración:</strong> no es un sistema de gestión de despachos ni de expedientes jurídicos.</p>
+                    </div>
 
-                    <p>
-                        Una novela de DEXterity. Los primeros cinco capítulos
-                        presentan a Mateo, Annika, Navarro y el misterio que
-                        rodea a un artefacto DEX aparentemente ordinario.
-                    </p>
+                    <div class="card">
+                        <i class="bi bi-shield-check feature-icon"></i>
+                        <h3>Análisis forense y aplicación de la ley</h3>
+                        <p>
+                            Los planes de procesamiento deterministas y los artefactos verificables pueden respaldar procedimientos reproducibles y revisables para procesar evidencia. El núcleo todavía no incluye integraciones forenses especializadas ni flujos de cadena de custodia validados.
+                        </p>
+                        <p><strong>En exploración:</strong> las comprobaciones de integridad, por sí solas, no demuestran la autenticidad de la evidencia.</p>
+                    </div>
 
-                    <p>
-                        <strong>Los capítulos 1–5 ya están disponibles.</strong>
-                        Paga lo que quieras, con una contribución mínima de
-                        US $0.50, y recibe el PDF por correo electrónico una vez
-                        confirmado el pago.
-                    </p>
+                    <div class="card">
+                        <i class="bi bi-mortarboard feature-icon"></i>
+                        <h3>Educación e investigación</h3>
+                        <p>
+                            Enseña transformaciones reproducibles, planes inspeccionables y flujos de trabajo basados en artefactos. El alumnado y los investigadores pueden examinar qué pretende hacer una transformación en lugar de tratarla como un script opaco.
+                        </p>
+                        <p><strong>Enfoque actual:</strong> flujos reproducibles de aprendizaje e investigación.</p>
+                    </div>
 
-                    <div class="cta" style="justify-content:center; margin-top:25px;">
+                    <div class="card">
+                        <i class="bi bi-clipboard2-check feature-icon"></i>
+                        <h3>Flujos de trabajo auditables para equipos</h3>
+                        <p>
+                            Comparte artefactos DEX que describan los cambios previstos. Revisa los planes antes de ejecutarlos, verifica la integridad de los artefactos y utiliza firmas criptográficas opcionales cuando necesites una capa adicional de confianza.
+                        </p>
+                        <p><strong>Capacidad central:</strong> artefactos de transformación inspeccionables y portables.</p>
+                    </div>
+                </div>
+
+                <div class="announcement">
+                    <strong>Alcance claro, afirmaciones honestas.</strong>
+                    Dennis proporciona una base de artefactos deterministas. Los flujos de trabajo especializados para cada sector se incorporarán conforme se desarrollen sus complementos y requisitos de validación.
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PRICING ================= -->
+        <section id="pricing-preview" class="section">
+
+            <div class="container">
+
+                <h2>Elige el plan de Forge que mejor se adapte a ti</h2>
+
+                <p class="section-subtitle">
+                    Empieza con Forge gratis y amplía el plan cuando tu trabajo lo requiera. Los planes de pago añaden almacenamiento, privacidad, colaboración y funciones de organización; no imponen restricciones artificiales a Dennis.
+                </p>
+
+                <div class="cards pricing-cards">
+
+                    <!-- FREE -->
+                    <div class="card pricing-card">
+
+                        <i class="bi bi-box pricing-icon"></i>
+
+                        <h3>Gratis</h3>
+
+                        <div class="price">
+                            $0
+                            <span>para siempre</span>
+                        </div>
+
+                        <p>
+                            Empieza a explorar Forge y a trabajar con artefactos públicos.
+                        </p>
+
+                        <ul>
+                            <li>100 MB de almacenamiento</li>
+                            <li>Artefactos públicos</li>
+                            <li>Soporte de la comunidad</li>
+                            <li>CLI gratuita para siempre</li>
+                        </ul>
+
                         <a
-                            href="the_books/dextiny.html"
-                            class="btn primary">
-                            Descubrir DEXtiny
+                            href="https://repo.dennis-forge.com/register/"
+                            class="btn secondary"
+                            target="_blank"
+                            >
+                            Comenzar
                         </a>
+
+                    </div>
+
+
+                    <!-- BASIC -->
+                    <div class="card pricing-card">
+
+                        <i class="bi bi-lightning-charge pricing-icon"></i>
+
+                        <h3>Basic</h3>
+
+                        <div class="price">
+                            $6.99 USD
+                            <span>/mes</span>
+                        </div>
+
+                        <p>
+                            Para desarrolladores independientes que necesitan almacenamiento privado y firma de artefactos.
+                        </p>
+
+                        <ul>
+                            <li>1 GB de almacenamiento</li>
+                            <li>Artefactos privados</li>
+                            <li>Firma de artefactos</li>
+                            <li>Soporte por correo electrónico</li>
+                        </ul>
+
+                        <a
+                            href="https://repo.dennis-forge.com/register/"
+                            class="btn secondary"
+                            target="_blank"
+                            >
+                            Elegir Basic
+                        </a>
+
+                    </div>
+
+
+                    <!-- PRO -->
+                    <div class="card pricing-card featured">
+
+                        <div class="badge">
+                            MÁS POPULAR
+                        </div>
+
+                        <i class="bi bi-stars pricing-icon"></i>
+
+                        <h3>Pro</h3>
+
+                        <div class="price">
+                            $10.99 USD
+                            <span>/mes</span>
+                        </div>
+
+                        <p>
+                            Para desarrolladores y profesionales que gestionan colecciones más grandes de artefactos.
+                        </p>
+
+                        <ul>
+                            <li>Todo lo incluido en Basic</li>
+                            <li>10 GB de almacenamiento</li>
+                            <li>Organizaciones</li>
+                            <li>Permisos avanzados</li>
+                            <li>Ampliaciones de almacenamiento</li>
+                        </ul>
+
+                        <a
+                            href="https://repo.dennis-forge.com/register/"
+                            class="btn primary"
+                            target="_blank"
+                            >
+                            Elegir Pro
+                        </a>
+
+                    </div>
+
+
+                    <!-- TEAM -->
+                    <div class="card pricing-card">
+
+                        <i class="bi bi-people pricing-icon"></i>
+
+                        <h3>Team</h3>
+
+                        <div class="price">
+                            $14.99 USD
+                            <span>/usuario/mes</span>
+                        </div>
+
+                        <p>
+                            Para equipos que necesitan espacios de trabajo compartidos, colaboración y capacidad para crecer.
+                        </p>
+
+                        <ul>
+                            <li>Todo lo incluido en Pro</li>
+                            <li>5 GB de almacenamiento por usuario</li>
+                            <li>30 GB de almacenamiento compartido para el equipo</li>
+                            <li>Espacios de trabajo para equipos</li>
+                            <li>Collaboration</li>
+                            <li>Soporte prioritario</li>
+                        </ul>
+
+                        <a
+                            href="https://repo.dennis-forge.com/register/"
+                            class="btn secondary"
+                            target="_blank"
+                            >
+                            Elegir Team
+                        </a>
+
+                    </div>
+
+
+                    <!-- ENTERPRISE -->
+                    <div class="card pricing-card enterprise">
+
+                        <i class="bi bi-building pricing-icon"></i>
+
+                        <h3>Enterprise</h3>
+
+                        <div class="price">
+                            Personalizado
+                            <span>contáctanos</span>
+                        </div>
+
+                        <p>
+                            Para organizaciones que necesitan infraestructura dedicada, soporte o acuerdos específicos.
+                        </p>
+
+                        <ul>
+                            <li>Organizaciones ilimitadas</li>
+                            <li>Soporte dedicado</li>
+                            <li>Incorporación personalizada</li>
+                            <li>Opciones de alojamiento propio</li>
+                            <li>Acuerdos empresariales</li>
+                        </ul>
+
+                        <a
+                            href="contact-es.html"
+                            class="btn secondary"
+                            target="_blank"
+                            >
+                            Contáctanos
+                        </a>
+
                     </div>
 
                 </div>
 
-            </div>
 
-            <div class="announcement">
-                <strong>Hay más en Dennis que código.</strong>
-                A veces los artefactos tienen historias propias.
-            </div>
+                <div class="announcement">
 
-        </div>
-
-    </section>
-
-    <!-- ================= PROGRAMA ACADÉMICO ================= -->
-    <section id="academic" class="section">
-        <div class="container">
-            <h2>Construyamos el futuro del software</h2>
-            <p class="section-subtitle">
-                Dennis también está pensado para quienes están aprendiendo,
-                enseñando e investigando cómo debería construirse el software.
-            </p>
-
-            <div class="cards">
-                <div class="card">
-                    <i class="bi bi-mortarboard feature-icon"></i>
-                    <h3>Estudiantes</h3>
-                    <p>
-                        Aprende sobre transformación determinista de software
-                        utilizando las mismas herramientas y conceptos que forman
-                        parte del ecosistema Dennis.
-                    </p>
+                    <strong>Empieza gratis. Mantén tu independencia.</strong>
+                    La CLI de Dennis y su núcleo determinista siguen siendo gratuitos y de código abierto. Forge proporciona la infraestructura alojada que los complementa.
 
                 </div>
-                <div class="card">
-                    <i class="bi bi-easel feature-icon"></i>
-                    <h3>Educadores</h3>
-                    <p>
-                        Incorpora flujos de transformación reproducibles en tus
-                        cursos, laboratorios y proyectos de ingeniería de software.
-                    </p>
-                </div>
-                <div class="card">
-                    <i class="bi bi-flask feature-icon"></i>
-                    <h3>Instituciones de investigación</h3>
-                    <p>
-                        Explora las transformaciones deterministas y los flujos
-                        de trabajo basados en artefactos en entornos de investigación.
-                    </p>
-                </div>
-            </div>
-            <div class="announcement">
-                <strong>El acceso académico importa.</strong>
-                Hay planes gratuitos y con descuento disponibles para estudiantes,
-                educadores e instituciones de investigación.
-            </div>
 
-            <div class="cta"
-                style="justify-content:center; margin-top:30px;">
-                <a
-                    href="academic-es.html"
-                    class="btn primary">
-                    Explorar el Programa Académico
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= PROGRAMA DE FUNDADORES ================= -->
-    <section id="founders-preview" class="section">
-
-        <div class="container">
-
-            <h2>Conviértete en Fundador de la Forjaduría</h2>
-
-            <p class="section-subtitle">
-                Antes de que existiera una comunidad, antes de que hubiera
-                miles de artefactos, estuvieron las personas que creyeron
-                en Dennis desde el principio.
-            </p>
-
-            <div class="founder-number-card reveal">
-
-                <div class="founder-number">
-                    161
-                </div>
-
-                <p class="founder-number-subtitle">
-                    Membresías de Fundador.
-                    Ni una más. Ni una menos.
-                </p>
-
-                <p>
-                    Las primeras 161 personas que decidan apoyar a Dennis
-                    pasarán a formar parte de su historia permanente como
-                    Fundadores de la Forjaduría.
-                </p>
-
-                <p>
-                    Los Fundadores reciben beneficios de por vida,
-                    reconocimiento especial y un lugar en el Salón de
-                    Fundadores.
-                </p>
-
-                <p>
-                    Y porque Dennis debería dejar el mundo un poco mejor
-                    de como lo encontró, el 15% de cada membresía de Fundador
-                    se dona: 10% a UNICEF y 5% a la investigación contra
-                    el cáncer infantil.
-                </p>
 
                 <div class="cta"
                     style="justify-content:center; margin-top:30px;">
 
                     <a
-                        href="founders-es.html"
-                        class="btn primary">
-                        Hazte Fundador
+                        href="pricing-es.html"
+                        class="btn secondary">
+                        Consulta todos los precios y detalles
                     </a>
 
                     <a
                         href="founders-es.html"
-                        class="btn secondary">
-                        Conoce los beneficios
+                        class="btn primary">
+                        Hazte fundador
                     </a>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
+        <!-- ================= EVERY PLAN ================= -->
+        <section id="all-plans" class="section">
+            <div class="container">
+                <h2>Todos los planes de Forge incluyen el núcleo</h2>
+                <p class="section-subtitle">Forge puede crecer con tu trabajo sin alterar los principios fundamentales del protocolo. Tus artefactos DEX siguen siendo portables, inspeccionables y tuyos.</p>
 
-    </section>
-
-    <!-- ================= CIERRE Y DEVOLVER ================= -->
-<section id="final-cta" class="section">
-
-    <div class="container">
-
-        <!-- FINAL CTA -->
-        <div class="founder-cta">
-
-            <h2>¿Listo para forjar?</h2>
-
-            <p>
-                Comienza con el CLI gratuito de Dennis, crea tu primer
-                artefacto determinista o únete a la Forjaduría y empieza
-                a construir un flujo de trabajo a su alrededor.
-            </p>
-
-            <div class="cta"
-                 style="justify-content:center; margin-top:30px;">
-
-                <a
-                    href="get-started-es.html"
-                    class="btn primary">
-                    Comenzar
-                </a>
-
-                <a
-                    href="https://github.com/crevilla2050/string-audit"
-                    class="btn secondary"
-                    target="_blank"
-                    rel="noopener">
-                    Explorar el CLI
-                </a>
-
-            </div>
-
-            <p class="section-subtitle"
-               style="margin-top:30px;">
-
-                Gratis para siempre. Código abierto.
-                Determinista por diseño.
-
-            </p>
-
-        </div>
-
-
-        <!-- BUILDING SOMETHING BIGGER -->
-        <div class="giving-back">
-
-            <h2>Construyendo algo más grande</h2>
-
-            <p class="section-subtitle">
-                Dennis Forge es más que un proyecto de software.
-                También es una forma de devolver algo al mundo.
-            </p>
-
-
-            <div class="cards">
-
-                <!-- CHILDREN'S HEALTH -->
-                <div class="card">
-
-                    <i class="bi bi-heart-pulse feature-icon"></i>
-
-                    <h3>Salud infantil</h3>
-
-                    <p>
-                        Una parte de los ingresos de Dennis Forge se dona a
-                        organizaciones benéficas, incluyendo UNICEF y
-                        organizaciones que apoyan la investigación contra
-                        el cáncer y la salud infantil.
-                    </p>
-
-                    <p>
-                        Los informes y comprobantes de las donaciones se
-                        publicarán semestralmente para mantener la transparencia.
-                    </p>
-
+                <div class="cards">
+                    <div class="card">
+                        <i class="bi bi-box-seam feature-icon"></i>
+                        <h3>Artefactos DEX</h3>
+                        <p>
+                            Trabaja con artefactos deterministas diseñados para inspeccionarse, verificarse, conservarse y compartirse.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-folder2-open feature-icon"></i>
+                        <h3>Proyectos y espacios de trabajo</h3>
+                        <p>
+                            Organiza los artefactos relacionados en proyectos y espacios de trabajo a medida que crece tu trabajo.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-shield-check feature-icon"></i>
+                        <h3>Control e integridad</h3>
+                        <p>
+                            Controla la visibilidad de los artefactos y trabaja con una infraestructura diseñada para preservar la integridad y ofrecer un comportamiento predecible.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-download feature-icon"></i>
+                        <h3>Conserva tus artefactos</h3>
+                        <p>
+                            Tus artefactos DEX no quedan atrapados en Forge. Expórtalos y sigue trabajando con la CLI de Dennis cuando quieras.
+                        </p>
+                    </div>
                 </div>
 
-
-                <!-- EDUCATION -->
-                <div class="card">
-
-                    <i class="bi bi-globe-americas feature-icon"></i>
-
-                    <h3>Educación y oportunidades</h3>
-
-                    <p>
-                        Creemos que el conocimiento debe ser accesible y que
-                        la tecnología puede crear oportunidades para todos.
-                    </p>
-
+                <div class="announcement">
+                    <strong>Ningún plan cambia el compromiso fundamental.</strong>
+                    Forge proporciona la infraestructura que rodea a Dennis; no se apropia de tu trabajo.
                 </div>
-
-
-                <!-- GIVING BACK -->
-                <div class="card">
-
-                    <i class="bi bi-heart feature-icon"></i>
-
-                    <h3>Devolver algo al mundo</h3>
-
-                    <p>
-                        Dennis Forge se compromete a destinar una parte de sus
-                        ingresos a causas que importan más allá del software.
-                    </p>
-
-                </div>
-
             </div>
+        </section>
 
+        <!-- ================= THE BOOKS ================= -->
+        <section id="books" class="section">
 
-            <!-- DONATION COMMITMENT -->
-            <div class="announcement">
+            <div class="container">
 
-                ❤️ <strong>10% de los ingresos</strong> apoyará a UNICEF
-                y <strong>5% de los ingresos</strong> apoyará iniciativas
-                de investigación contra el cáncer.
+                <h2>La biblioteca de Dennis Forge</h2>
 
-            </div>
-
-
-            <!-- DIRECT DONATIONS -->
-            <p class="section-subtitle charity-intro">
-
-                No necesitas Dennis Forge para ayudar a marcar la diferencia.
-                Si estas causas significan algo para ti, también puedes
-                apoyarlas directamente:
-
-            </p>
-
-
-            <div class="cta charity-cta">
-
-                <a
-                    href="https://help.unicef.org/global/donate"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn secondary">
-
-                    <i class="bi bi-heart-fill"></i>
-                    Donar a UNICEF
-
-                </a>
-
-
-                <a
-                    href="https://www.stjude.org/donate"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn secondary">
-
-                    <i class="bi bi-heart-pulse-fill"></i>
-                    Donar a St. Jude
-
-                </a>
-
-            </div>
-
-
-            <!-- DONATION DISCOUNT -->
-            <div class="charity-discount">
-
-                <i class="bi bi-gift-fill"></i>
-
-                <h3>
-                    Descuento por apoyar una buena causa
-                </h3>
-
-                <p>
-                    Ayudar a los demás merece un pequeño reconocimiento.
+                <p class="section-subtitle">
+                    Dennis Forge no trata solo de software. Los artefactos DEX y las historias que los rodean forman parte del mismo universo: conocimiento preservado en un formato que puede compartirse, inspeccionarse y recordarse.
                 </p>
 
-                <p>
-                    Envíanos comprobante de una donación de al menos
-                    <strong>US $20</strong> a UNICEF o
-                    St. Jude Children's Research Hospital y recibe un
-                    <strong>25% de descuento en cualquier plan de
-                    Dennis Forge.</strong>
-                    <em>(Aplican términos y condiciones.)</em>
+                <div class="cards">
+
+                    <div class="card">
+
+                        <div style="text-align:center; margin-bottom:25px;">
+                            <img
+                                src="assets/img/dextiny-cover.png"
+                                alt="DEXtiny — una novela de DEXterity"
+                                style="width:min(100%, 260px); border-radius:4px 8px 8px 4px; box-shadow:0 18px 40px rgba(0,0,0,.45);">
+                        </div>
+
+                        <i class="bi bi-book feature-icon"></i>
+
+                        <h3>DEXtiny</h3>
+
+                        <p>
+                            Una novela de DEXterity. Los primeros cinco capítulos presentan a Mateo, Annika, Navarro y el misterio que rodea a un artefacto DEX aparentemente común.
+                        </p>
+
+                        <p>
+                            <strong>Los capítulos 1–5 ya están disponibles.</strong>
+                            Paga lo que quieras, con una contribución mínima de
+                            US $0.50, y recibe el PDF por correo electrónico una vez confirmado el pago.
+                        </p>
+
+                        <div class="cta" style="justify-content:center; margin-top:25px;">
+                            <a
+                                href="the_books/dextiny.html"
+                                class="btn primary">
+                                Descubre DEXtiny
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="announcement">
+                    <strong>Dennis es mucho más que código.</strong>
+                    A veces, los artefactos tienen sus propias historias.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ACADEMIC PROGRAM ================= -->
+        <section id="academic-preview" class="section">
+
+            <div class="container">
+
+                <h2>Construye el futuro de la información verificable</h2>
+
+                <p class="section-subtitle">Dennis también sirve a quienes aprenden, enseñan e investigan flujos de información reproducibles; la transformación de software es su aplicación actual más madura.</p>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <i class="bi bi-mortarboard feature-icon"></i>
+
+                        <h3>Estudiantes</h3>
+
+                        <p>
+                            Aprende transformación determinista de software con las mismas herramientas y conceptos que se utilizan en todo el ecosistema Dennis.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="bi bi-easel feature-icon"></i>
+
+                        <h3>Docentes</h3>
+
+                        <p>
+                            Incorpora flujos de transformación reproducibles a tus cursos, laboratorios y proyectos de ingeniería de software.
+                        </p>
+
+                    </div>
+
+                    <div class="card">
+                        <i class="bi bi-flask feature-icon"></i>
+                        <h3>Instituciones de investigación</h3>
+                        <p>
+                            Explora transformaciones deterministas y flujos de trabajo basados en artefactos en entornos de investigación.
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement">
+                    <strong>El acceso académico importa.</strong>
+                    Hay planes gratuitos y con descuento para estudiantes, docentes e instituciones de investigación.
+                </div>
+
+                <div class="cta"
+                    style="justify-content:center; margin-top:30px;">
+
+                    <a
+                        href="academic-es.html"
+                        class="btn primary">
+                        Conoce el programa académico
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOUNDER PROGRAM ================= -->
+        <section id="founders-preview" class="section">
+            <div class="container">
+                <h2>Conviértete en fundador de Forge</h2>
+
+                <p class="section-subtitle">
+                    Antes de que hubiera una comunidad y miles de artefactos, hubo personas que creyeron en el proyecto desde el principio.
                 </p>
 
+                <div class="founder-number-card reveal">
+                    <div class="founder-number">
+                        161
+                    </div>
 
-                <!-- TERMS -->
-                <div class="terms">
+                    <p class="founder-number-subtitle">
+                        Membresías de fundador. Ni más ni menos.
+                    </p>
 
-                    <h4>Términos y condiciones</h4>
+                    <p>
+                        Las primeras 161 personas que decidan apoyar a Dennis formarán parte de su historia como fundadores de Forge.
+                    </p>
 
-                    <ul>
+                    <p>
+                        Los fundadores reciben beneficios de por vida, reconocimiento especial y un lugar en el Salón de Fundadores.
+                    </p>
 
-                        <li>
-                            Donación mínima:
-                            <strong>US $20</strong>.
-                        </li>
+                    <p>
+                        Y porque Dennis debería dejar el mundo un poco mejor de como lo encontró, se dona el 15 % de cada membresía de fundador: 10 % a UNICEF y 5 % a la investigación del cáncer infantil.
+                    </p>
 
-                        <li>
-                            Válido para donaciones realizadas a UNICEF,
-                            St. Jude Children's Research Hospital o cualquier
-                            organización sin fines de lucro verificada que
-                            trabaje para mejorar el mundo.
-                        </li>
+                    <div class="cta"
+                        style="justify-content:center; margin-top:30px;">
 
-                        <li>
-                            Las donaciones aprobadas otorgan un
-                            <strong>25% de descuento durante tres ciclos
-                            consecutivos de facturación</strong>.
-                        </li>
+                        <a
+                            href="founders-es.html"
+                            class="btn primary">
+                            Hazte fundador
+                        </a>
 
-                        <li>
-                            Puede ser necesario presentar comprobante de la
-                            donación y, cuando corresponda, comprobante del
-                            estatus de organización sin fines de lucro de la
-                            entidad receptora.
-                        </li>
+                        <a
+                            href="founders-es.html"
+                            class="btn secondary">
+                            Conoce los beneficios para fundadores
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <li>
-                            Solo puede haber un descuento por donación activo
-                            por cuenta de cliente en cualquier momento.
-                        </li>
+        <!-- ================= FINAL CTA ================= -->
+        <section id="final-cta" class="section">
 
-                        <li>
-                            Una vez que expire un descuento, una nueva donación
-                            aprobada puede permitir obtener otro período de descuento.
-                        </li>
+            <div class="container">
 
-                        <li>
-                            El descuento no puede combinarse con membresías de
-                            Fundador ni con otras promociones.
-                        </li>
+                <div class="founder-cta">
 
-                        <li>
-                            Dennis Forge se reserva el derecho de rechazar
-                            comprobantes no verificables u organizaciones que
-                            no cumplan con el espíritu de este programa.
-                        </li>
+                    <h2>¿Listo para forjar?</h2>
 
-                    </ul>
+                    <p>
+                        Empieza con la CLI gratuita de Dennis, crea tu primer artefacto determinista o únete a Forge para construir un flujo de trabajo a su alrededor.
+                    </p>
+
+                    <div class="cta"
+                        style="justify-content:center; margin-top:30px;">
+
+                        <a
+                            href="get-started-es.html"
+                            class="btn primary">
+                            Comenzar
+                        </a>
+
+                        <a
+                            href="https://github.com/crevilla2050/string-audit"
+                            class="btn secondary"
+                            target="_blank"
+                            rel="noopener">
+                            Explora la CLI
+                        </a>
+
+                    </div>
+
+                    <p class="section-subtitle"
+                    style="margin-top:30px;">
+
+                        Gratis para siempre. Código abierto. Determinista por diseño.
+
+                    </p>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </div>
+        <section id="charity" class="section">
+            <div class="container">
+                <h2>Construimos algo más grande</h2>
+                <p class="section-subtitle">
+                    Dennis Forge es más que un proyecto de software: también es una forma de contribuir a la sociedad.
+                </p>
+                <div class="cards">
+                    <div class="card">
+                        <i class="bi bi-heart-pulse feature-icon"></i>
+                        <h3>Salud infantil</h3>
+                        <p>
+                            Una parte de los ingresos de Dennis Forge se dona a organizaciones benéficas, entre ellas UNICEF y organizaciones que apoyan la investigación contra el cáncer y la salud infantil. Para garantizar la transparencia, se publicarán informes y comprobantes de las donaciones cada seis meses.
+                        </p>
+                    </div>
 
-</section>
+                    <div class="card">
+                        <i class="bi bi-globe-americas feature-icon"></i>
+                        <h3>Educación y oportunidades</h3>
+                        <p>
+                            Creemos que el conocimiento debe ser accesible y que la tecnología puede crear oportunidades para todas las personas.
+                        </p>
+                    </div>
 
+                    <div class="card">
+                        <i class="bi bi-heart feature-icon"></i>
+                        <h3>Contribuir a la sociedad</h3>
+                        <p>
+                            Dennis Forge se compromete a destinar parte de sus ingresos a causas que van más allá del software.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="announcement">
+                    ❤️ El 10 % de los ingresos se destinará a UNICEF y el 5 % a iniciativas de investigación contra el cáncer.
+                </div>
+
+                <p class="section-subtitle charity-intro">
+                    No necesitas Dennis Forge para contribuir. Si estas causas te importan, también puedes apoyarlas directamente:
+                </p>
+
+                <div class="cta charity-cta">
+                    <a
+                        href="https://help.unicef.org/global/donate"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn secondary"
+                    >
+                        <i class="bi bi-heart-fill"></i>
+                        Donar a UNICEF
+                    </a>
+
+                    <a
+                        href="https://www.stjude.org/donate"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn secondary"
+                    >
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        Donar a St. Jude
+                    </a>
+
+                </div>
+
+                <div class="charity-discount">
+                    <i class="bi bi-gift-fill"></i>
+                    <h3>Descuento por apoyar una buena causa</h3>
+
+                    <p>
+                        Ayudar a los demás merece un pequeño reconocimiento.
+                    </p>
+
+                    <p>
+                        Envíanos un comprobante de una donación de al menos
+                        <strong>US $20</strong> a UNICEF o
+                        St. Jude Children's Research Hospital y recibe un
+                        <strong>25 % de descuento en cualquier plan de Dennis Forge.</strong>
+                        <em>(Aplican términos y condiciones.)</em>
+                    </p>
+
+                    <div class="terms">
+
+                        <h4>Términos y condiciones</h4>
+
+                        <ul>
+                            <li>Donación mínima: <strong>US $20</strong>.</li>
+
+                            <li>
+                                Válido para donaciones a UNICEF, St. Jude Children's Research Hospital o cualquier organización sin fines de lucro verificada que trabaje para mejorar el mundo.
+                            </li>
+
+                            <li>
+                                Las donaciones aprobadas otorgan un
+                                <strong>25 % de descuento durante tres ciclos de facturación consecutivos</strong>.
+                            </li>
+
+                            <li>
+                                Es posible que se solicite el comprobante de la donación y, cuando corresponda, la acreditación de que la organización receptora no tiene fines de lucro.
+                            </li>
+
+                            <li>
+                                Solo puede haber un descuento por donación activo a la vez en cada cuenta.
+                            </li>
+
+                            <li>
+                                Cuando venza un descuento por donación, una nueva donación aprobada podrá dar derecho a otro periodo de descuento.
+                            </li>
+
+                            <li>
+                                El descuento no se puede combinar con membresías de fundador ni con otras promociones.
+                            </li>
+
+                            <li>
+                                Dennis Forge se reserva el derecho de rechazar comprobantes no verificables u organizaciones que no se ajusten al propósito de este programa.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
   </main>  
 
-<dennis-footer></dennis-footer>
+    <dennis-footer></dennis-footer>
+
+<script src="assets/js/releases-news.js"></script>
+
 <script>
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {

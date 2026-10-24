@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEXtiny — A DEXterity Novel | Dennis Forge</title>
+
+    <meta name="description"
+          content="DEXtiny — the first five chapters of a DEXterity novel. Pay what you wish and receive the PDF by email after payment confirmation.">
+
+    <meta property="og:title" content="DEXtiny — A DEXterity Novel">
+    <meta property="og:description" content="Read Chapters 1–5 of DEXtiny. Pay what you wish, minimum US$0.50.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dennis-forge.com/the_books/dextiny.html">
+
+    <link rel="stylesheet"
+          href="../assets/css/styles.css?v=20260629">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
+
+    <script src="../assets/js/forge.js"></script>
+    <script src="../assets/js/components/header.js"></script>
+    <script src="../assets/js/components/footer.js"></script>
+
+    <style>
+        /* =========================================================
+           DEXtiny page
+           Built to mirror the generated Dennis Forge visual.
+           ========================================================= */
+
+        .dextiny-page {
+            padding-bottom: 40px;
+        }
+
+        .dextiny-hero {
+            display: grid;
+            grid-template-columns: minmax(280px, .85fr) minmax(0, 1.15fr);
+            gap: 70px;
+            align-items: center;
+            min-height: 720px;
+            padding: 65px 5% 45px;
+        }
+
+        .dextiny-cover-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .dextiny-cover-wrap::before {
+            content: "";
+            position: absolute;
+            inset: 5% 4% 2%;
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(47,212,198,.13),
+                    transparent 68%
+                );
+            filter: blur(35px);
+            z-index: 0;
+        }
+
+        .dextiny-cover {
+            position: relative;
+            z-index: 1;
+            width: min(100%, 430px);
+            border-radius: 4px 10px 10px 4px;
+            box-shadow:
+                0 25px 55px rgba(0,0,0,.65),
+                0 0 35px rgba(47,212,198,.08);
+            transition:
+                transform .4s ease,
+                box-shadow .4s ease;
+        }
+
+        .dextiny-cover:hover {
+            transform: translateY(-5px) rotate(-.5deg);
+            box-shadow:
+                0 32px 70px rgba(0,0,0,.75),
+                0 0 45px rgba(47,212,198,.14);
+        }
+
+        .dextiny-kicker {
+            color: var(--orange);
+            font-size: .95rem;
+            font-weight: 700;
+            letter-spacing: .28rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .dextiny-title {
+            font-size: clamp(4rem, 8vw, 7rem);
+            line-height: .9;
+            margin: 0 0 1.4rem;
+            font-weight: 700;
+            letter-spacing: -.05em;
+            color: #fff;
+        }
+
+        .dextiny-title span {
+            color: var(--teal);
+        }
+
+        .dextiny-rule {
+            width: 230px;
+            height: 2px;
+            background: var(--orange);
+            margin: 0 0 30px;
+        }
+
+        .dextiny-lead {
+            max-width: 650px;
+            color: var(--text) !important;
+            font-size: 1.2rem !important;
+            line-height: 1.75 !important;
+            opacity: .95 !important;
+        }
+
+        .dextiny-intro {
+            max-width: 650px;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+        .dextiny-facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .dextiny-fact {
+            text-align: center;
+            padding: 18px 10px;
+        }
+
+        .dextiny-fact i {
+            display: block;
+            font-size: 2.25rem;
+            color: var(--teal);
+            margin-bottom: 12px;
+        }
+
+        .dextiny-fact strong {
+            display: block;
+            color: var(--text);
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .dextiny-purchase {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 40px;
+            align-items: stretch;
+            margin: 15px 3% 0;
+            padding: 45px;
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,.08);
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,.045),
+                    rgba(255,255,255,.018)
+                );
+            box-shadow: 0 15px 45px rgba(0,0,0,.22);
+        }
+
+        .dextiny-purchase-info {
+            padding-right: 40px;
+            border-right: 1px solid rgba(255,255,255,.12);
+        }
+
+        .dextiny-purchase h2 {
+            margin: 0 0 8px;
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        .dextiny-purchase h2::after {
+            display: none;
+        }
+
+        .pay-what {
+            color: var(--teal);
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .minimum {
+            margin-top: 25px;
+            color: var(--text);
+            font-size: 1.05rem;
+        }
+
+        .minimum strong {
+            color: var(--orange);
+        }
+
+        .secure-note {
+            margin-top: 30px;
+            padding: 15px 18px;
+            border-left: 3px solid var(--teal);
+            background: rgba(47,212,198,.06);
+            color: var(--muted);
+        }
+
+        .secure-note i {
+            color: var(--teal);
+            margin-right: 8px;
+        }
+
+        .dextiny-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-label {
+            display: block;
+            color: var(--text);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .dextiny-input {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,.2);
+            background: rgba(0,0,0,.2);
+            color: var(--text);
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .dextiny-input:focus {
+            border-color: var(--teal);
+            box-shadow: 0 0 0 3px rgba(47,212,198,.08);
+        }
+
+        .amount-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .amount-input-wrap {
+            position: relative;
+        }
+
+        .amount-input-wrap span {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted);
+            pointer-events: none;
+        }
+
+        .amount-input {
+            padding-left: 32px;
+        }
+
+        .minimum-pill {
+            padding: 14px 18px;
+            border-radius: 6px;
+            border: 1px solid rgba(47,212,198,.25);
+            color: var(--teal);
+            white-space: nowrap;
+            font-size: .9rem;
+        }
+
+        .dextiny-pay-button {
+            width: 100%;
+            min-height: 62px;
+            margin-top: 25px;
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 8px;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--teal),
+                    #21b9ab
+                );
+            color: #001313;
+            font-size: 1.15rem;
+            font-weight: 800;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(47,212,198,.18);
+            transition: .2s ease;
+        }
+
+        .dextiny-pay-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(47,212,198,.28);
+        }
+
+        .dextiny-pay-button i {
+            margin-right: 8px;
+        }
+
+        .terms-note {
+            text-align: center;
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: .82rem;
+        }
+
+        .terms-note a {
+            color: var(--teal);
+        }
+
+        .how-it-works {
+            margin: 15px 3% 0;
+            padding: 28px 35px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,.06);
+            background: rgba(255,255,255,.018);
+        }
+
+        .how-title {
+            text-align: center;
+            color: var(--teal);
+            letter-spacing: .22rem;
+            font-size: .9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            align-items: center;
+        }
+
+        .how-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            color: var(--text);
+            text-align: center;
+        }
+
+        .how-step i {
+            color: var(--teal);
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .how-arrow {
+            color: var(--muted);
+            font-size: 1.3rem;
+            opacity: .55;
+        }
+
+        .release-note {
+            text-align: center;
+            max-width: 850px;
+            margin: 45px auto 0;
+            padding: 0 20px;
+        }
+
+        .release-note h2 {
+            justify-content: center;
+            margin-top: 0;
+        }
+
+        .release-note h2::after {
+            display: none;
+        }
+
+        .release-note p {
+            font-size: 1rem;
+        }
+
+
+        /* =========================================================
+           Visitor counter
+           The actual Flag Counter embed is intentionally kept in
+           the HTML body so its provider-specific code is isolated.
+           ========================================================= */
+
+        .visitor-section {
+            margin: 45px 3% 0;
+            padding: 32px 35px;
+            text-align: center;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,.06);
+            background: rgba(255,255,255,.018);
+        }
+
+        .visitor-title {
+            color: var(--teal);
+            letter-spacing: .22rem;
+            font-size: .9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .visitor-intro {
+            max-width: 700px;
+            margin: 0 auto 24px;
+            color: var(--muted);
+        }
+
+        .visitor-widget {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70px;
+        }
+
+        .visitor-widget-placeholder {
+            padding: 14px 20px;
+            border: 1px dashed rgba(47,212,198,.25);
+            border-radius: 8px;
+            color: var(--muted);
+            font-size: .9rem;
+        }
+
+        /* The payment button is intentionally a presentation shell for now.
+           The actual payment integration and webhook will be wired separately. */
+
+        @media (max-width: 900px) {
+            .dextiny-hero,
+            .dextiny-purchase {
+                grid-template-columns: 1fr;
+            }
+
+            .dextiny-hero {
+                gap: 35px;
+                min-height: auto;
+                padding-top: 45px;
+            }
+
+            .dextiny-cover {
+                width: min(72vw, 390px);
+            }
+
+            .dextiny-purchase-info {
+                padding-right: 0;
+                padding-bottom: 30px;
+                border-right: 0;
+                border-bottom: 1px solid rgba(255,255,255,.12);
+            }
+
+            .how-steps {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .how-arrow {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .dextiny-title {
+                font-size: 3.8rem;
+            }
+
+            .dextiny-facts {
+                grid-template-columns: 1fr;
+            }
+
+            .dextiny-purchase {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 25px;
+            }
+
+            .how-it-works {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 25px 18px;
+            }
+
+            .amount-row {
+                grid-template-columns: 1fr;
+            }
+
+            .minimum-pill {
+                text-align: center;
+            }
+        }
+        .paypal-button-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            min-height: 62px;
+        }
+
+        .paypal-button-wrap form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .paypal-button-wrap input[type="image"] {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a href="https://dennis-forge.com/" class="logo">
+            <img
+                src="../assets/img/logo.png"
+                alt="Dennis Forge"
+                class="sidebar-logo">
+            <span>Dennis Forge</span>
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="https://dennis-forge.com/">Home</a>
+                </li>
+
+                <li>
+                    <a href="https://dennis-forge.com/#workflow">
+                        How It Works
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://repo.dennis-forge.com">
+                        The Forge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://dennis-forge.com/#pricing-preview">
+                        Pricing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://dennis-forge.com/founders.html">
+                        Founders
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://dennis-forge.com/use-cases.html">
+                        Use Cases
+                    </a>
+                </li>
+            </ul>
+
+            <a
+                href="https://dennis-forge.com/get-started.html"
+                class="btn primary forge-register"
+                target="_blank">
+                Get Started
+            </a>
+        </nav>
+
+        <div class="language-switcher">
+            <a href="https://dennis-forge.com/" class="active">EN</a>
+            <a href="https://dennis-forge.com/index-es.html">ES</a>
+            <a href="https://dennis-forge.com/index-de.html">DE</a>
+        </div>
+
+    </div>
+</header>
+
+<main id="main-content" class="dextiny-page">
+
+    <!-- ================= HERO ================= -->
+    <section class="dextiny-hero">
+
+        <div class="dextiny-cover-wrap">
+            <img
+                src="../assets/img/dextiny-cover.png"
+                alt="DEXtiny — A DEXterity Novel, Chapters 1–5"
+                class="dextiny-cover">
+        </div>
+
+        <div>
+            <div class="dextiny-kicker">A DEXterity Novel</div>
+
+            <h1 class="dextiny-title">
+                DEX<span>tiny</span>
+            </h1>
+
+            <div class="dextiny-rule"></div>
+
+            <p class="dextiny-lead">
+                In a near-future world built on digital trust, artifacts move
+                silently through systems, authenticating, transforming, and
+                sometimes… hiding the truth.
+            </p>
+
+            <p class="dextiny-intro">
+                DEXtiny is the beginning of the DEXterity series.
+                Chapters 1–5 introduce you to the people, the technology,
+                and the mystery at the heart of it all.
+            </p>
+
+            <div class="dextiny-facts">
+                <div class="dextiny-fact">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <strong>Chapters 1–5<br>of DEXtiny</strong>
+                </div>
+
+                <div class="dextiny-fact">
+                    <i class="bi bi-book"></i>
+                    <strong>PDF Format<br>Optimized for Reading</strong>
+                </div>
+
+                <div class="dextiny-fact">
+                    <i class="bi bi-shield-check"></i>
+                    <strong>Secure Delivery<br>Direct to Your Email</strong>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================= PURCHASE ================= -->
+    <section class="dextiny-purchase">
+
+        <div class="dextiny-purchase-info">
+
+            <h2>Get Your Copy</h2>
+
+            <div class="pay-what">Pay what you wish</div>
+
+            <p>
+                You decide what it's worth.
+                Every contribution helps keep the story — and
+                Dennis Forge — moving forward.
+            </p>
+
+            <div class="secure-note">
+                <i class="bi bi-shield-check"></i>
+                Secure payment processing
+                <br>
+                <small>
+                    You'll receive your PDF by email after payment is confirmed.
+                </small>
+            </div>
+            
+
+        </div>
+
+        <div class="dextiny-form">
+
+            <label class="form-label" for="dextiny-email">
+                1. Your email address
+            </label>
+
+            <input
+                id="dextiny-email"
+                class="dextiny-input"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com">
+
+            <p style="margin-top:8px; font-size:.9rem;">
+                We'll send your copy to this email.
+            </p>
+
+            <label
+                class="form-label"
+                for="dextiny-amount"
+                style="margin-top:18px;">
+                2. Choose your payment (USD)
+            </label>
+
+            <div class="amount-row">
+
+                <div class="amount-input-wrap">
+                    <span>$</span>
+                    <input
+                        id="dextiny-amount"
+                        class="dextiny-input amount-input"
+                        type="number"
+                        
+                        step="0.01"
+                        
+                        inputmode="decimal">
+                </div>
+
+            </div>
+
+            <div class="paypal-button-wrap">
+            <button
+                id="dextiny-pay"
+                class="dextiny-pay-button"
+                type="button">
+                <i class="bi bi-lock-fill"></i>
+                Pay What You Wish
+            </button>
+
+            <div
+                id="dextiny-payment-status"
+                class="terms-note"
+                aria-live="polite">
+            </div>
+        </div>
+
+            <div class="terms-note">
+                By completing your purchase, you agree to our
+                <a href="../terms.html">Terms of Use</a>
+                and
+                <a href="../privacy.html">Privacy Policy</a>.
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="how-it-works">
+
+        <div class="how-title">How It Works</div>
+
+        <div class="how-steps">
+
+            <div class="how-step">
+                <i class="bi bi-envelope"></i>
+                <span>You securely<br>pay</span>
+            </div>
+
+            <div class="how-step">
+                <span class="how-arrow">→</span>
+                <i class="bi bi-check-circle"></i>
+                <span>Payment is<br>confirmed</span>
+            </div>
+
+            <div class="how-step">
+                <span class="how-arrow">→</span>
+                <i class="bi bi-envelope-arrow-down"></i>
+                <span>We send your PDF<br>by email</span>
+            </div>
+
+            <div class="how-step">
+                <span class="how-arrow">→</span>
+                <i class="bi bi-book"></i>
+                <span>You enjoy<br>DEXtiny</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="release-note">
+        <h2>A Small Artifact From a Larger Story</h2>
+        <p>
+            DEXtiny is the first public glimpse into the DEXterity universe.
+            The story is still being forged — one artifact at a time.
+        </p>
+    </section>
+
+</main>
+
+    <!-- ================= VISITORS ================= -->
+    <section class="visitor-section">
+
+        <div class="visitor-title">Readers Around the World</div>
+
+        <p class="visitor-intro">
+            DEXtiny is a small artifact from a much larger story.
+            Let's see where its readers are discovering it.
+        </p>
+
+        <div class="visitor-widget">
+            <a
+                href="https://info.flagcounter.com/Txve"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                    src="https://s01.flagcounter.com/count2/Txve/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+                    alt="Visitor counter by country"
+                    border="0">
+            </a>
+        </div>
+        </div>
+
+    </section>
+
+<div id="forge-fade"></div>
+<dennis-footer></dennis-footer>
+<script>
+const paymentButton = document.getElementById("dextiny-pay");
+const paymentStatus = document.getElementById("dextiny-payment-status");
+
+paymentButton.addEventListener("click", async function () {
+
+    const email =
+        document.getElementById("dextiny-email").value.trim();
+
+    const amount =
+        parseFloat(
+            document.getElementById("dextiny-amount").value
+        );
+
+    if (!email || !email.includes("@")) {
+        paymentStatus.textContent =
+            "Please enter a valid email address.";
+        return;
+    }
+
+    if (!Number.isFinite(amount) || amount <= 0) {
+        paymentStatus.textContent =
+            "Please enter an amount greater than zero.";
+        return;
+    }
+
+    paymentButton.disabled = true;
+
+    paymentStatus.textContent =
+        "Creating your secure PayPal checkout…";
+
+    try {
+
+        const response = await fetch(
+            "https://books.dennis-forge.com/api/create-order",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    email: email,
+                    amount: amount.toFixed(2)
+                })
+            }
+        );
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(
+                data.error ||
+                "Unable to create the PayPal order."
+            );
+        }
+
+        if (!data.approval_url) {
+            throw new Error(
+                "PayPal did not provide an approval URL."
+            );
+        }
+
+        paymentStatus.textContent =
+            "Redirecting to PayPal…";
+
+        window.location.href = data.approval_url;
+
+    } catch (error) {
+
+        console.error("Payment error:", error);
+
+        paymentStatus.textContent =
+            error.message;
+
+        paymentButton.disabled = false;
+    }
+});
+</script>
+<script>
+(function(){
+
+  const k = atob("Mzg7Mzg7NDA7NDA7Mzc7Mzk7Mzc7Mzk7NjY7NjU=").split(";").map(Number);
+  let b = [];
+
+  document.addEventListener("keydown", function(e){
+
+    b.push(e.keyCode);
+
+    if(b.length > k.length){
+      b.shift();
+    }
+
+    if(b.join(",") === k.join(",")){
+
+      const f = document.getElementById("forge-fade");
+      f.style.opacity = 1;
+
+      setTimeout(()=>{
+        location.href="https://dennis-forge.com/docs/index.html";
+      },900);
+
+    }
+
+  });
+
+})();
+</script>
+</body>
+</html>
