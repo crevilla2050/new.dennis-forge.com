@@ -130,21 +130,6 @@
         }
     }
 
-    function loadXTimeline() {
-        const existing = document.querySelector(
-            'script[src="https://platform.twitter.com/widgets.js"]'
-        );
-
-        if (existing) {
-            return;
-        }
-
-        const script = document.createElement("script");
-        script.async = true;
-        script.src = "https://platform.twitter.com/widgets.js";
-        script.charset = "utf-8";
-        document.head.append(script);
-    }
 
     class DennisReleaseNews extends HTMLElement {
         connectedCallback() {
@@ -191,10 +176,33 @@
                             </article>
                         </div>
                     </div>
-                </section>`;
+                </section>
+                <div class="social-links">
+                    <a
+                        class="updates-link"
+                        href="https://x.com/dennistheforge"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        ${labels.follow}
+                        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+
+                    <a
+                        class="updates-link"
+                        href="https://www.facebook.com/profile.php?id=61593552752822"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="bi bi-facebook" aria-hidden="true"></i>
+                        Facebook
+                        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                `;
 
             loadReleases(this.querySelector(".release-list"), labels);
-            loadXTimeline();
         }
     }
 
